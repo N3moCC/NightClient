@@ -1,0 +1,29 @@
+[package]
+name = "nl-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+flate2.workspace = true
+futures.workspace = true
+nl-auth.workspace = true
+nl-java.workspace = true
+nl-net.workspace = true
+nl-night.workspace = true
+nl-platform.workspace = true
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+url.workspace = true
+uuid.workspace = true
+zip.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

@@ -1,0 +1,372 @@
+[
+  {
+    "version": "1.20",
+    "blur": [],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "portable full-scene fallback (vanilla has no menu blur)",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20/classpath.json"
+  },
+  {
+    "version": "1.20.1",
+    "blur": [],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "portable full-scene fallback (vanilla has no menu blur)",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.1/classpath.json"
+  },
+  {
+    "version": "1.20.2",
+    "blur": [],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "portable full-scene fallback (vanilla has no menu blur)",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.2/classpath.json"
+  },
+  {
+    "version": "1.20.3",
+    "blur": [],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "portable full-scene fallback (vanilla has no menu blur)",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.3/classpath.json"
+  },
+  {
+    "version": "1.20.4",
+    "blur": [],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "portable full-scene fallback (vanilla has no menu blur)",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.4/classpath.json"
+  },
+  {
+    "version": "1.20.5",
+    "blur": [
+      "protected void renderBlurredBackground(float);"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.5/classpath.json"
+  },
+  {
+    "version": "1.20.6",
+    "blur": [
+      "protected void renderBlurredBackground(float);"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.20.6/classpath.json"
+  },
+  {
+    "version": "1.21",
+    "blur": [
+      "protected void renderBlurredBackground(float);"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21/classpath.json"
+  },
+  {
+    "version": "1.21.1",
+    "blur": [
+      "protected void renderBlurredBackground(float);"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.1/classpath.json"
+  },
+  {
+    "version": "1.21.2",
+    "blur": [
+      "protected void renderBlurredBackground();"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.2/classpath.json"
+  },
+  {
+    "version": "1.21.3",
+    "blur": [
+      "protected void renderBlurredBackground();"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.3/classpath.json"
+  },
+  {
+    "version": "1.21.4",
+    "blur": [
+      "protected void renderBlurredBackground();"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.4/classpath.json"
+  },
+  {
+    "version": "1.21.5",
+    "blur": [
+      "protected void renderBlurredBackground();"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.5/classpath.json"
+  },
+  {
+    "version": "1.21.6",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.6/classpath.json"
+  },
+  {
+    "version": "1.21.7",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.7/classpath.json"
+  },
+  {
+    "version": "1.21.8",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.8/classpath.json"
+  },
+  {
+    "version": "1.21.9",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.9/classpath.json"
+  },
+  {
+    "version": "1.21.10",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.10/classpath.json"
+  },
+  {
+    "version": "1.21.11",
+    "blur": [
+      "protected void renderBlurredBackground(net.minecraft.client.gui.GuiGraphics);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/1.21.11/classpath.json"
+  },
+  {
+    "version": "26.1",
+    "blur": [
+      "protected void extractBlurredBackground(net.minecraft.client.gui.GuiGraphicsExtractor);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/26.1/classpath.json"
+  },
+  {
+    "version": "26.1.1",
+    "blur": [
+      "protected void extractBlurredBackground(net.minecraft.client.gui.GuiGraphicsExtractor);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/26.1.1/classpath.json"
+  },
+  {
+    "version": "26.1.2",
+    "blur": [
+      "protected void extractBlurredBackground(net.minecraft.client.gui.GuiGraphicsExtractor);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/26.1.2/classpath.json"
+  },
+  {
+    "version": "26.2",
+    "blur": [
+      "protected void extractBlurredBackground(net.minecraft.client.gui.GuiGraphicsExtractor);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.blaze3d.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/26.2/classpath.json"
+  },
+  {
+    "version": "26.3",
+    "blur": [
+      "protected void extractBlurredBackground(net.minecraft.client.gui.GuiGraphicsExtractor);"
+    ],
+    "nativeInverse": [
+      "public static final com.mojang.renderpearl.api.pipeline.RenderPipeline GUI_INVERT;"
+    ],
+    "crosshairBlend": {
+      "srcRgb": "ONE_MINUS_DST_COLOR",
+      "dstRgb": "ONE_MINUS_SRC_COLOR",
+      "srcAlpha": "ONE",
+      "dstAlpha": "ZERO"
+    },
+    "menuBlurImplementation": "vanilla",
+    "evidence": "javap of exact cached Minecraft mapped release in build/compatibility/26.3/classpath.json"
+  }
+]

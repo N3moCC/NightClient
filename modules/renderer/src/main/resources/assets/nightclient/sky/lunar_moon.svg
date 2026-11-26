@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <filter id="regolith" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.036" numOctaves="5" seed="63" result="n1"/>
+      <feColorMatrix in="n1" type="matrix" values="
+        0.30 0    0    0 0.56
+        0    0.30 0    0 0.57
+        0    0    0.32 0 0.59
+        0    0    0    0.40 0"/>
+    </filter>
+    <filter id="mariaWarp" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="29" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="26" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="7"/>
+    </filter>
+    <filter id="craterSoft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.4"/>
+    </filter>
+    <filter id="raySoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.8"/>
+    </filter>
+    <filter id="limbFeather" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="48%" stop-color="#e2e8f0" stop-opacity="0.12"/>
+      <stop offset="78%" stop-color="#cbd5e1" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="moonBody" cx="44%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#fafbfe"/>
+      <stop offset="56%" stop-color="#ebeef5"/>
+      <stop offset="84%" stop-color="#d4dbe8"/>
+      <stop offset="100%" stop-color="#bcc6d8"/>
+    </radialGradient>
+
+    <radialGradient id="limbSoft" cx="45%" cy="42%" r="56%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="72%" stop-color="#64748b" stop-opacity="0.0"/>
+      <stop offset="94%" stop-color="#64748b" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.22"/>
+    </radialGradient>
+
+    <mask id="moonEdgeMask">
+      <circle cx="256" cy="256" r="126" fill="#ffffff" filter="url(#limbFeather)"/>
+    </mask>
+    <clipPath id="moonClip">
+      <circle cx="256" cy="256" r="130"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="256" cy="256" r="244" fill="url(#moonGlow)"/>
+
+  <g mask="url(#moonEdgeMask)">
+    <g clip-path="url(#moonClip)">
+      <circle cx="256" cy="256" r="132" fill="url(#moonBody)"/>
+
+      <!-- Natural asymmetric lunar maria (no symmetric "face" blobs!) -->
+      <g filter="url(#mariaWarp)" opacity="0.34">
+        <path d="M 140 206 C 146 164, 194 142, 240 156 C 258 162, 250 192, 224 206 C 198 220, 178 248, 152 264 C 134 274, 134 236, 140 206 Z" fill="#6f7c93"/>
+        <path d="M 248 166 C 276 156, 326 168, 344 198 C 358 224, 338 258, 306 254 C 282 252, 272 228, 256 212 C 242 198, 234 174, 248 166 Z" fill="#68758c"/>
+        <path d="M 278 258 C 304 248, 348 258, 356 286 C 362 308, 330 330, 300 322 C 278 316, 264 282, 278 258 Z" fill="#768399"/>
+        <path d="M 158 282 C 180 270, 214 284, 226 306 C 238 328, 212 356, 184 344 C 160 334, 146 298, 158 282 Z" fill="#7d899f" opacity="0.72"/>
+        <ellipse cx="212" cy="186" rx="28" ry="18" transform="rotate(-24 212 186)" fill="#5c687e" opacity="0.58"/>
+        <ellipse cx="316" cy="212" rx="24" ry="19" transform="rotate(18 316 212)" fill="#5f6b80" opacity="0.52"/>
+        <ellipse cx="362" cy="238" rx="14" ry="20" transform="rotate(-10 362 238)" fill="#626e84" opacity="0.65"/>
+      </g>
+
+      <rect x="120" y="120" width="272" height="272" filter="url(#regolith)" opacity="0.54"/>
+
+      <!-- Delicate Tycho & Copernicus ejecta rays -->
+      <g filter="url(#raySoft)" opacity="0.22" stroke="#ffffff" stroke-linecap="round">
+        <line x1="238" y1="334" x2="180" y2="276" stroke-width="2.2"/>
+        <line x1="238" y1="334" x2="226" y2="250" stroke-width="1.8"/>
+        <line x1="238" y1="334" x2="300" y2="268" stroke-width="1.6"/>
+        <line x1="202" y1="242" x2="164" y2="222" stroke-width="1.6"/>
+      </g>
+
+      <!-- Fine subtle crater accents -->
+      <g filter="url(#craterSoft)">
+        <circle cx="238" cy="334" r="8.5" fill="#e2e8f0" opacity="0.40"/>
+        <circle cx="238" cy="334" r="5" fill="#94a3b8" opacity="0.34"/>
+        <circle cx="202" cy="242" r="10" fill="#e2e8f0" opacity="0.32"/>
+        <circle cx="202" cy="242" r="5.5" fill="#94a3b8" opacity="0.28"/>
+        <circle cx="288" cy="192" r="7.5" fill="#8895aa" opacity="0.26"/>
+        <circle cx="268" cy="296" r="9" fill="#8d9aaf" opacity="0.22"/>
+      </g>
+
+      <circle cx="256" cy="256" r="132" fill="url(#limbSoft)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <title>NightClient Logo</title>
+  <!-- Mathematically exact dual-circle Eclipse Crescent sliced cleanly by a 13px parallel diagonal horizon cut -->
+  <path fill="currentColor" d="
+    M 121.57 26.09
+    A 104 104 0 0 0 37.12 184.01
+    L 92.19 152.22
+    A 86 86 0 0 1 121.57 26.09
+    Z
+  "/>
+  <path fill="currentColor" d="
+    M 44.59 194.71
+    A 104 104 0 0 0 225.62 159.87
+    A 86 86 0 0 1 100.70 162.32
+    Z
+  "/>
+  <!-- Razor-sharp 4-point North Star cradled in the crescent aperture -->
+  <path fill="currentColor" d="
+    M 174 48
+    C 179 76, 190 87, 218 92
+    C 190 97, 179 108, 174 136
+    C 169 108, 158 97, 130 92
+    C 158 87, 169 76, 174 48
+    Z
+  "/>
+</svg>

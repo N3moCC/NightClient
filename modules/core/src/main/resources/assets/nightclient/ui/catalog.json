@@ -1,0 +1,6712 @@
+{
+  "schemaVersion": 1,
+  "modules": [
+    {
+      "id": "saturation",
+      "label": "module.saturation.label",
+      "summary": "module.saturation.summary",
+      "icon": "saturation",
+      "bind": "saturation.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "hitColor",
+      "label": "module.hitColor.label",
+      "summary": "module.hitColor.summary",
+      "icon": "palette",
+      "bind": "hitColor.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "noRender",
+      "label": "module.noRender.label",
+      "summary": "module.noRender.summary",
+      "icon": "no-render",
+      "bind": "noRender.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "lowFire",
+      "label": "module.lowFire.label",
+      "summary": "module.lowFire.summary",
+      "icon": "fire",
+      "bind": "lowFire.enabled",
+      "hud": false,
+      "category": "render",
+      "menuVisible": false
+    },
+    {
+      "id": "enchantGlint",
+      "label": "module.enchantGlint.label",
+      "summary": "module.enchantGlint.summary",
+      "icon": "enchant-glint",
+      "bind": "enchantGlint.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "wavyCapes",
+      "label": "module.wavyCapes.label",
+      "summary": "module.wavyCapes.summary",
+      "icon": "wavy-capes",
+      "bind": "wavyCapes.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "tooltips",
+      "label": "module.tooltips.label",
+      "summary": "module.tooltips.summary",
+      "icon": "tooltips",
+      "bind": "tooltips.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "optimization",
+      "label": "module.optimization.label",
+      "summary": "module.optimization.summary",
+      "icon": "optimization",
+      "bind": "optimization.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "motionBlur",
+      "label": "module.motionBlur.label",
+      "summary": "module.motionBlur.summary",
+      "icon": "blur",
+      "bind": "motionBlur.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "tabAnimation",
+      "label": "module.tabAnimation.label",
+      "summary": "module.tabAnimation.summary",
+      "icon": "motion",
+      "bind": "tabAnimation.enabled",
+      "hud": false,
+      "category": "render"
+    },
+    {
+      "id": "crosshair",
+      "label": "module.crosshair.label",
+      "summary": "module.crosshair.summary",
+      "icon": "crosshair",
+      "bind": "crosshair.enabled",
+      "hud": false,
+      "category": "camera"
+    },
+    {
+      "id": "zoom",
+      "label": "module.zoom.label",
+      "summary": "module.zoom.summary",
+      "icon": "zoom",
+      "bind": "zoom.enabled",
+      "hud": false,
+      "category": "camera"
+    },
+    {
+      "id": "freelook",
+      "label": "module.freelook.label",
+      "summary": "module.freelook.summary",
+      "icon": "eye",
+      "bind": "freelook.enabled",
+      "hud": false,
+      "category": "camera"
+    },
+    {
+      "id": "aspectRatio",
+      "label": "module.aspectRatio.label",
+      "summary": "module.aspectRatio.summary",
+      "icon": "resize",
+      "bind": "aspectRatio.enabled",
+      "hud": false,
+      "category": "camera"
+    },
+    {
+      "id": "swing",
+      "label": "module.swing.label",
+      "summary": "module.swing.summary",
+      "icon": "swing",
+      "bind": "swing.enabled",
+      "hud": false,
+      "category": "camera"
+    },
+    {
+      "id": "viewmodel",
+      "label": "module.viewmodel.label",
+      "summary": "module.viewmodel.summary",
+      "icon": "move",
+      "bind": "viewmodel.enabled",
+      "hud": false,
+      "category": "camera",
+      "menuVisible": false
+    },
+    {
+      "id": "protect",
+      "label": "module.protect.label",
+      "summary": "module.protect.summary",
+      "icon": "protect",
+      "bind": "protect.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "hwhelper",
+      "label": "module.hwhelper.label",
+      "summary": "module.hwhelper.summary",
+      "icon": "hwhelper",
+      "bind": "hwhelper.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "safeCtLeave",
+      "label": "module.safeCtLeave.label",
+      "summary": "module.safeCtLeave.summary",
+      "icon": "safe-ct-leave",
+      "bind": "safeCtLeave.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "itemScroller",
+      "label": "module.itemScroller.label",
+      "summary": "module.itemScroller.summary",
+      "icon": "item-scroller",
+      "bind": "itemScroller.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "tapeMouse",
+      "label": "module.tapeMouse.label",
+      "summary": "module.tapeMouse.summary",
+      "icon": "tape-mouse",
+      "bind": "tapeMouse.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "soundControl",
+      "label": "module.soundControl.label",
+      "summary": "module.soundControl.summary",
+      "icon": "sound-control",
+      "bind": "soundControl.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "effectAlert",
+      "label": "module.effectAlert.label",
+      "summary": "module.effectAlert.summary",
+      "icon": "effect-alert",
+      "bind": "effectAlert.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "tweaksy",
+      "label": "module.tweaksy.label",
+      "summary": "module.tweaksy.summary",
+      "icon": "sliders",
+      "bind": "tweaksy.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "accountSwitcher",
+      "label": "module.accountSwitcher.label",
+      "summary": "module.accountSwitcher.summary",
+      "icon": "user",
+      "bind": "accountSwitcher.enabled",
+      "hud": false,
+      "category": "player"
+    },
+    {
+      "id": "atmosphere",
+      "label": "module.atmosphere.label",
+      "summary": "module.atmosphere.summary",
+      "icon": "atmosphere",
+      "bind": "atmosphere.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "customSky",
+      "label": "module.customSky.label",
+      "summary": "module.customSky.summary",
+      "icon": "custom-sky",
+      "bind": "customSky.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "worldMap",
+      "label": "module.worldMap.label",
+      "summary": "module.worldMap.summary",
+      "icon": "world-map",
+      "bind": "worldMap.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "waypoints",
+      "label": "module.waypoints.label",
+      "summary": "module.waypoints.summary",
+      "icon": "anchor",
+      "bind": "waypoints.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "playerHealth",
+      "label": "module.playerHealth.label",
+      "summary": "module.playerHealth.summary",
+      "icon": "heart",
+      "bind": "playerHealth.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "totemCounter",
+      "label": "module.totemCounter.label",
+      "summary": "module.totemCounter.summary",
+      "icon": "protect",
+      "bind": "totemCounter.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "playerPing",
+      "label": "module.playerPing.label",
+      "summary": "module.playerPing.summary",
+      "icon": "ping",
+      "bind": "playerPing.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "damageSplash",
+      "label": "module.damageSplash.label",
+      "summary": "module.damageSplash.summary",
+      "icon": "damage-splash",
+      "bind": "damageSplash.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "explosionRing",
+      "label": "module.explosionRing.label",
+      "summary": "module.explosionRing.summary",
+      "icon": "explosion-ring",
+      "bind": "explosionRing.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "hitbox",
+      "label": "module.hitbox.label",
+      "summary": "module.hitbox.summary",
+      "icon": "hitbox",
+      "bind": "hitbox.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "blockOverlay",
+      "label": "module.blockOverlay.label",
+      "summary": "module.blockOverlay.summary",
+      "icon": "block-overlay",
+      "bind": "blockOverlay.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "itemPhysics",
+      "label": "module.itemPhysics.label",
+      "summary": "module.itemPhysics.summary",
+      "icon": "item-physics",
+      "bind": "itemPhysics.enabled",
+      "hud": false,
+      "category": "world"
+    },
+    {
+      "id": "target",
+      "label": "module.target.label",
+      "summary": "module.target.summary",
+      "icon": "target",
+      "bind": "target.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "hud",
+      "label": "module.hud.label",
+      "summary": "module.hud.summary",
+      "icon": "cooldowns",
+      "bind": "hud.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "tnt",
+      "label": "module.tnt.label",
+      "summary": "module.tnt.summary",
+      "icon": "tnt",
+      "bind": "tnt.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "armor",
+      "label": "module.armor.label",
+      "summary": "module.armor.summary",
+      "icon": "armor",
+      "bind": "armor.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "potions",
+      "label": "module.potions.label",
+      "summary": "module.potions.summary",
+      "icon": "potions",
+      "bind": "potions.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "inventory",
+      "label": "module.inventory.label",
+      "summary": "module.inventory.summary",
+      "icon": "inventory",
+      "bind": "inventory.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "food",
+      "label": "module.food.label",
+      "summary": "module.food.summary",
+      "icon": "food",
+      "bind": "food.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "minimap",
+      "label": "module.minimap.label",
+      "summary": "module.minimap.summary",
+      "icon": "minimap",
+      "bind": "minimap.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "betterChat",
+      "label": "module.betterChat.label",
+      "summary": "module.betterChat.summary",
+      "icon": "better-chat",
+      "bind": "betterChat.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "scoreboard",
+      "label": "module.scoreboard.label",
+      "summary": "module.scoreboard.summary",
+      "icon": "layers",
+      "bind": "scoreboard.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "keystrokes",
+      "label": "module.keystrokes.label",
+      "summary": "module.keystrokes.summary",
+      "icon": "keystrokes",
+      "bind": "keystrokes.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "coordinates",
+      "label": "module.coordinates.label",
+      "summary": "module.coordinates.summary",
+      "icon": "coordinates",
+      "bind": "coordinates.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "ping",
+      "label": "module.ping.label",
+      "summary": "module.ping.summary",
+      "icon": "ping",
+      "bind": "ping.enabled",
+      "hud": true,
+      "category": "hud"
+    },
+    {
+      "id": "fps",
+      "label": "module.fps.label",
+      "summary": "module.fps.summary",
+      "icon": "fps",
+      "bind": "fps.enabled",
+      "hud": true,
+      "category": "hud"
+    }
+  ],
+  "controls": {
+    "saturation.strength": {
+      "label": "field.strength",
+      "kind": "slider",
+      "range": [
+        0.0,
+        2.5,
+        0.01
+      ]
+    },
+    "motionBlur.strength": {
+      "label": "field.motionBlur.strength",
+      "kind": "slider",
+      "range": [
+        1.0,
+        100.0,
+        1.0
+      ]
+    },
+    "motionBlur.quality": {
+      "label": "field.motionBlur.quality",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "low",
+          "label": "choice.motionBlur.quality.low"
+        },
+        {
+          "value": "medium",
+          "label": "choice.motionBlur.quality.medium"
+        },
+        {
+          "value": "high",
+          "label": "choice.motionBlur.quality.high"
+        }
+      ]
+    },
+    "motionBlur.blurSky": {
+      "label": "field.motionBlur.blurSky",
+      "kind": "toggle"
+    },
+    "tabAnimation.style": {
+      "label": "field.tabAnimation.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "scale",
+          "label": "choice.tabAnimation.style.scale"
+        },
+        {
+          "value": "slide",
+          "label": "choice.tabAnimation.style.slide"
+        }
+      ]
+    },
+    "tabAnimation.durationMs": {
+      "label": "field.tabAnimation.durationMs",
+      "kind": "slider",
+      "range": [
+        60,
+        600,
+        10
+      ]
+    },
+    "protect.hideNickname": {
+      "label": "field.hideNickname",
+      "kind": "toggle"
+    },
+    "protect.maskPasswords": {
+      "label": "field.maskPasswords",
+      "kind": "toggle"
+    },
+    "protect.replacement": {
+      "label": "field.replacement",
+      "kind": "input"
+    },
+    "crosshair.colorMode": {
+      "label": "field.colorMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "option.vanilla"
+        },
+        {
+          "value": "custom",
+          "label": "option.custom"
+        },
+        {
+          "value": "pixels",
+          "label": "option.pixels"
+        }
+      ]
+    },
+    "crosshair.pixelScale": {
+      "label": "field.pixelScale",
+      "kind": "slider",
+      "range": [
+        1.0,
+        8.0,
+        1.0
+      ]
+    },
+    "crosshair.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -64,
+        64,
+        1
+      ]
+    },
+    "crosshair.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -64,
+        64,
+        1
+      ]
+    },
+    "crosshair.mirrorX": {
+      "label": "field.mirrorX",
+      "kind": "toggle"
+    },
+    "crosshair.mirrorY": {
+      "label": "field.mirrorY",
+      "kind": "toggle"
+    },
+    "crosshair.color": {
+      "label": "field.color",
+      "kind": "color",
+      "format": "hex"
+    },
+    "crosshair.opacity": {
+      "label": "field.crosshairOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "crosshair.thirdPerson": {
+      "label": "field.crosshair.thirdPerson",
+      "kind": "toggle"
+    },
+    "crosshair.targetHighlight": {
+      "label": "field.crosshair.targetHighlight",
+      "kind": "toggle"
+    },
+    "crosshair.targetColor": {
+      "label": "field.crosshair.targetColor",
+      "kind": "color",
+      "format": "hex",
+      "condition": "crosshair.targetHighlight"
+    },
+    "crosshair.targetShapeEnabled": {
+      "label": "field.crosshair.targetShapeEnabled",
+      "kind": "toggle"
+    },
+    "crosshair.targetShape": {
+      "label": "field.crosshair.targetShape",
+      "kind": "choice",
+      "options": [
+        { "value": "x", "label": "option.crosshair.targetShape.x" },
+        { "value": "cross", "label": "option.crosshair.targetShape.cross" },
+        { "value": "dot", "label": "option.crosshair.targetShape.dot" },
+        { "value": "circle", "label": "option.crosshair.targetShape.circle" },
+        { "value": "diamond", "label": "option.crosshair.targetShape.diamond" },
+        { "value": "brackets", "label": "option.crosshair.targetShape.brackets" },
+        { "value": "chevron", "label": "option.crosshair.targetShape.chevron" },
+        { "value": "expand", "label": "option.crosshair.targetShape.expand" },
+        { "value": "custom", "label": "option.crosshair.targetShape.custom" }
+      ],
+      "condition": "crosshair.targetShapeEnabled"
+    },
+    "crosshair.targetScale": {
+      "label": "field.crosshair.targetScale",
+      "kind": "slider",
+      "range": [0.4, 3.0, 0.05],
+      "condition": "crosshair.targetShapeEnabled"
+    },
+    "crosshair.targetSize": {
+      "label": "field.crosshair.targetSize",
+      "kind": "slider",
+      "range": [1.0, 32.0, 0.5],
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand"
+    },
+    "crosshair.targetGap": {
+      "label": "field.crosshair.targetGap",
+      "kind": "slider",
+      "range": [0.0, 24.0, 0.5],
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand && !crosshair.targetShape=dot"
+    },
+    "crosshair.targetThickness": {
+      "label": "field.crosshair.targetThickness",
+      "kind": "slider",
+      "range": [0.5, 6.0, 0.1],
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand"
+    },
+    "crosshair.targetOutline": {
+      "label": "field.crosshair.targetOutline",
+      "kind": "slider",
+      "range": [0.0, 3.0, 0.25],
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand"
+    },
+    "crosshair.targetCenterDot": {
+      "label": "field.crosshair.targetCenterDot",
+      "kind": "toggle",
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand && !crosshair.targetShape=dot"
+    },
+    "crosshair.targetRotation": {
+      "label": "field.crosshair.targetRotation",
+      "kind": "slider",
+      "range": [-180.0, 180.0, 5.0],
+      "condition": "crosshair.targetShapeEnabled && !crosshair.targetShape=custom && !crosshair.targetShape=expand && !crosshair.targetShape=dot && !crosshair.targetShape=circle"
+    },
+    "crosshair.targetAnimate": {
+      "label": "field.crosshair.targetAnimate",
+      "kind": "toggle",
+      "condition": "crosshair.targetShapeEnabled || crosshair.targetHighlight"
+    },
+    "crosshair.targetAnimSpeed": {
+      "label": "field.crosshair.targetAnimSpeed",
+      "kind": "slider",
+      "range": [4.0, 30.0, 1.0],
+      "condition": "crosshair.targetAnimate && crosshair.targetShapeEnabled || crosshair.targetAnimate && crosshair.targetHighlight"
+    },
+    "crosshair.targetMobs": {
+      "label": "field.crosshair.targetMobs",
+      "kind": "toggle",
+      "condition": "crosshair.targetHighlight || crosshair.targetShapeEnabled"
+    },
+    "crosshair.targetHostileOnly": {
+      "label": "field.crosshair.targetHostileOnly",
+      "kind": "toggle",
+      "condition": "crosshair.targetMobs && crosshair.targetHighlight || crosshair.targetMobs && crosshair.targetShapeEnabled"
+    },
+    "crosshair.targetRange": {
+      "label": "field.crosshair.targetRange",
+      "kind": "slider",
+      "range": [0.0, 64.0, 0.5],
+      "condition": "crosshair.targetHighlight || crosshair.targetShapeEnabled"
+    },
+    "zoom.factor": {
+      "label": "field.factor",
+      "kind": "slider",
+      "range": [
+        1.25,
+        20.0,
+        0.25
+      ]
+    },
+    "zoom.smooth": {
+      "label": "field.smooth",
+      "kind": "toggle"
+    },
+    "zoom.scroll": {
+      "label": "field.scroll",
+      "kind": "toggle"
+    },
+    "viewmodel.main.enabled": {
+      "label": "field.viewmodel.main.enabled",
+      "kind": "toggle"
+    },
+    "viewmodel.main.x": {
+      "label": "field.viewmodel.main.x",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.main.y": {
+      "label": "field.viewmodel.main.y",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.main.z": {
+      "label": "field.viewmodel.main.z",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.main.rotateX": {
+      "label": "field.viewmodel.main.rotateX",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.main.rotateY": {
+      "label": "field.viewmodel.main.rotateY",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.main.rotateZ": {
+      "label": "field.viewmodel.main.rotateZ",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.main.scaleX": {
+      "label": "field.viewmodel.main.scaleX",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.main.scaleY": {
+      "label": "field.viewmodel.main.scaleY",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.main.scaleZ": {
+      "label": "field.viewmodel.main.scaleZ",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.off.enabled": {
+      "label": "field.viewmodel.off.enabled",
+      "kind": "toggle"
+    },
+    "viewmodel.off.x": {
+      "label": "field.viewmodel.off.x",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.off.y": {
+      "label": "field.viewmodel.off.y",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.off.z": {
+      "label": "field.viewmodel.off.z",
+      "kind": "slider",
+      "range": [
+        -4,
+        4,
+        0.01
+      ]
+    },
+    "viewmodel.off.rotateX": {
+      "label": "field.viewmodel.off.rotateX",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.off.rotateY": {
+      "label": "field.viewmodel.off.rotateY",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.off.rotateZ": {
+      "label": "field.viewmodel.off.rotateZ",
+      "kind": "slider",
+      "range": [
+        -360,
+        360,
+        1
+      ]
+    },
+    "viewmodel.off.scaleX": {
+      "label": "field.viewmodel.off.scaleX",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.off.scaleY": {
+      "label": "field.viewmodel.off.scaleY",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.off.scaleZ": {
+      "label": "field.viewmodel.off.scaleZ",
+      "kind": "slider",
+      "range": [
+        0.05,
+        8,
+        0.05
+      ]
+    },
+    "viewmodel.snap": {
+      "label": "field.snap",
+      "kind": "toggle"
+    },
+    "viewmodel.translationSnap": {
+      "label": "field.translationSnap",
+      "kind": "slider",
+      "range": [
+        0.01,
+        0.5,
+        0.01
+      ]
+    },
+    "viewmodel.rotationSnap": {
+      "label": "field.rotationSnap",
+      "kind": "slider",
+      "range": [
+        1.0,
+        90.0,
+        1.0
+      ]
+    },
+    "viewmodel.scaleSnap": {
+      "label": "field.scaleSnap",
+      "kind": "slider",
+      "range": [
+        0.01,
+        1.0,
+        0.01
+      ]
+    },
+    "hitColor.mode": {
+      "label": "field.mode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "entity",
+          "label": "option.entity"
+        },
+        {
+          "value": "hitbox",
+          "label": "option.hitbox"
+        },
+        {
+          "value": "both",
+          "label": "option.both"
+        }
+      ]
+    },
+    "hitColor.armor": {
+      "label": "field.hitColor.armor",
+      "kind": "toggle",
+      "condition": "!hitColor.mode=hitbox"
+    },
+    "hitColor.color": {
+      "label": "field.color",
+      "kind": "color",
+      "format": "hex"
+    },
+    "hitColor.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "itemScroller.dragMatching": {
+      "label": "field.itemScroller.dragMatching",
+      "kind": "toggle"
+    },
+    "itemScroller.dragOnlyMatching": {
+      "label": "field.itemScroller.dragOnlyMatching",
+      "kind": "toggle",
+      "condition": "itemScroller.dragMatching"
+    },
+    "itemScroller.dragCooldownMs": {
+      "label": "field.itemScroller.dragCooldownMs",
+      "kind": "slider",
+      "range": [
+        0,
+        250,
+        5
+      ],
+      "condition": "itemScroller.dragMatching"
+    },
+    "itemScroller.moveMatching": {
+      "label": "field.itemScroller.moveMatching",
+      "kind": "toggle"
+    },
+    "itemScroller.dropMatching": {
+      "label": "field.itemScroller.dropMatching",
+      "kind": "toggle"
+    },
+    "itemScroller.shiftPlace": {
+      "label": "field.itemScroller.shiftPlace",
+      "kind": "toggle"
+    },
+    "itemScroller.wheel": {
+      "label": "field.itemScroller.wheel",
+      "kind": "toggle"
+    },
+    "itemScroller.wheelMode": {
+      "label": "field.itemScroller.wheelMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "stack",
+          "label": "option.itemScroller.stack"
+        },
+        {
+          "value": "matching",
+          "label": "option.itemScroller.matching"
+        }
+      ],
+      "condition": "itemScroller.wheel"
+    },
+    "itemScroller.wheelDirection": {
+      "label": "field.itemScroller.wheelDirection",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "both",
+          "label": "option.itemScroller.both"
+        },
+        {
+          "value": "up",
+          "label": "option.itemScroller.up"
+        },
+        {
+          "value": "down",
+          "label": "option.itemScroller.down"
+        }
+      ],
+      "condition": "itemScroller.wheel"
+    },
+    "itemScroller.cooldownMs": {
+      "label": "field.itemScroller.cooldownMs",
+      "kind": "slider",
+      "range": [
+        20,
+        1000,
+        10
+      ],
+      "condition": "itemScroller.wheel"
+    },
+    "itemScroller.matchNbt": {
+      "label": "field.itemScroller.matchNbt",
+      "kind": "toggle"
+    },
+    "hitbox.players": {
+      "label": "field.players",
+      "kind": "toggle"
+    },
+    "hitbox.mobs": {
+      "label": "field.mobs",
+      "kind": "toggle"
+    },
+    "hitbox.items": {
+      "label": "field.items",
+      "kind": "toggle"
+    },
+    "hitbox.eyeLine": {
+      "label": "field.eyeLine",
+      "kind": "toggle"
+    },
+    "hitbox.color": {
+      "label": "field.color",
+      "kind": "color",
+      "format": "hex"
+    },
+    "hitbox.lineWidth": {
+      "label": "field.lineWidth",
+      "kind": "slider",
+      "range": [
+        0.5,
+        8.0,
+        0.1
+      ]
+    },
+    "hitbox.range": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [
+        1,
+        128,
+        1
+      ]
+    },
+    "aspectRatio.preset": {
+      "label": "field.preset",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "16_9",
+          "label": "choice.ratio.r16_9"
+        },
+        {
+          "value": "4_3",
+          "label": "choice.ratio.r4_3"
+        },
+        {
+          "value": "16_10",
+          "label": "choice.ratio.r16_10"
+        },
+        {
+          "value": "21_9",
+          "label": "choice.ratio.r21_9"
+        },
+        {
+          "value": "5_4",
+          "label": "choice.ratio.r5_4"
+        },
+        {
+          "value": "custom",
+          "label": "choice.ratio.custom"
+        }
+      ]
+    },
+    "aspectRatio.ratio": {
+      "label": "field.ratio",
+      "kind": "slider",
+      "range": [
+        0.5,
+        4.0,
+        0.01
+      ]
+    },
+    "optimization.profile": {
+      "label": "field.optimization.profile",
+      "kind": "choice",
+      "options": [
+        { "value": "lossless", "label": "choice.optimization.profile.lossless" },
+        { "value": "performance", "label": "choice.optimization.profile.performance" },
+        { "value": "competitive", "label": "choice.optimization.profile.competitive" },
+        { "value": "custom", "label": "choice.optimization.profile.custom" }
+      ]
+    },
+    "optimization.autoCompatibility": {
+      "label": "field.optimization.autoCompatibility",
+      "kind": "toggle"
+    },
+    "optimization.undergroundCaveCulling": {
+      "label": "field.optimization.undergroundCaveCulling",
+      "kind": "toggle"
+    },
+    "optimization.retainedTerrainCache": {
+      "label": "field.optimization.retainedTerrainCache",
+      "kind": "toggle"
+    },
+    "optimization.leafCulling": {
+      "label": "field.optimization.leafCulling",
+      "kind": "toggle"
+    },
+    "optimization.fastModelRendering": {
+      "label": "field.optimization.fastModelRendering",
+      "kind": "toggle"
+    },
+    "optimization.occlusionCulling": {
+      "label": "field.optimization.occlusionCulling",
+      "kind": "toggle"
+    },
+    "optimization.staticBlockEntityBatching": {
+      "label": "field.optimization.staticBlockEntityBatching",
+      "kind": "toggle"
+    },
+    "optimization.staticEntityBatching": {
+      "label": "field.optimization.staticEntityBatching",
+      "kind": "toggle"
+    },
+    "optimization.hologramTextCache": {
+      "label": "field.optimization.hologramTextCache",
+      "kind": "toggle"
+    },
+    "optimization.nativeGpuInstancing": {
+      "label": "field.optimization.nativeGpuInstancing",
+      "kind": "toggle"
+    },
+    "optimization.nativePboUploads": {
+      "label": "field.optimization.nativePboUploads",
+      "kind": "toggle"
+    },
+    "optimization.nativePacketCodec": {
+      "label": "field.optimization.nativePacketCodec",
+      "kind": "toggle"
+    },
+    "optimization.emptyBlockEntitySkip": {
+      "label": "field.optimization.emptyBlockEntitySkip",
+      "kind": "toggle"
+    },
+    "optimization.signTextCulling": {
+      "label": "field.optimization.signTextCulling",
+      "kind": "toggle"
+    },
+    "optimization.signTextDistance": {
+      "label": "field.optimization.signTextDistance",
+      "kind": "slider",
+      "range": [
+        8,
+        96,
+        4
+      ],
+      "condition": "optimization.signTextCulling"
+    },
+    "optimization.itemClustering": {
+      "label": "field.optimization.itemClustering",
+      "kind": "toggle"
+    },
+    "optimization.itemClusterLimit": {
+      "label": "field.optimization.itemClusterLimit",
+      "kind": "slider",
+      "range": [
+        1,
+        16,
+        1
+      ],
+      "condition": "optimization.itemClustering"
+    },
+    "optimization.nametagCulling": {
+      "label": "field.nametagCulling",
+      "kind": "toggle"
+    },
+    "optimization.nametagDistance": {
+      "label": "field.nametagDistance",
+      "kind": "slider",
+      "range": [
+        8,
+        64,
+        2
+      ],
+      "condition": "optimization.nametagCulling"
+    },
+    "optimization.entityCulling": {
+      "label": "field.entityCulling",
+      "kind": "toggle"
+    },
+    "optimization.entityDistance": {
+      "label": "field.entityDistance",
+      "kind": "slider",
+      "range": [
+        16,
+        128,
+        4
+      ],
+      "condition": "optimization.entityCulling"
+    },
+    "optimization.blockEntityCulling": {
+      "label": "field.blockEntityCulling",
+      "kind": "toggle"
+    },
+    "optimization.blockEntityDistance": {
+      "label": "field.blockEntityDistance",
+      "kind": "slider",
+      "range": [
+        16,
+        128,
+        4
+      ],
+      "condition": "optimization.blockEntityCulling"
+    },
+    "optimization.particleCulling": {
+      "label": "field.particleCulling",
+      "kind": "toggle"
+    },
+    "optimization.particleDistance": {
+      "label": "field.particleDistance",
+      "kind": "slider",
+      "range": [
+        8,
+        128,
+        4
+      ],
+      "condition": "optimization.particleCulling"
+    },
+    "optimization.particleLimit": {
+      "label": "field.particleLimit",
+      "kind": "slider",
+      "range": [
+        100,
+        4000,
+        100
+      ],
+      "condition": "optimization.particleCulling"
+    },
+    "optimization.fastParticlePhysics": {
+      "label": "field.optimization.fastParticlePhysics",
+      "kind": "toggle"
+    },
+    "optimization.hudCache": {
+      "label": "field.hudCache",
+      "kind": "toggle"
+    },
+    "optimization.vanillaHudCache": {
+      "label": "field.optimization.vanillaHudCache",
+      "kind": "toggle"
+    },
+    "optimization.scoreboardCache": {
+      "label": "field.optimization.scoreboardCache",
+      "kind": "toggle"
+    },
+    "noRender.fire": {
+      "label": "field.noRender.fire",
+      "kind": "toggle"
+    },
+    "noRender.hideFire": {
+      "label": "field.noRender.hideFire",
+      "kind": "toggle",
+      "condition": "noRender.fire"
+    },
+    "noRender.fireOffset": {
+      "label": "field.noRender.fireOffset",
+      "kind": "slider",
+      "range": [
+        0,
+        1.5,
+        0.01
+      ],
+      "condition": "!noRender.hideFire"
+    },
+    "noRender.hurtCam": {
+      "label": "field.noRender.hurtCam",
+      "kind": "toggle"
+    },
+    "noRender.totem": {
+      "label": "field.noRender.totem",
+      "kind": "toggle"
+    },
+    "noRender.pumpkin": {
+      "label": "field.noRender.pumpkin",
+      "kind": "toggle"
+    },
+    "noRender.powderSnow": {
+      "label": "field.noRender.powderSnow",
+      "kind": "toggle"
+    },
+    "noRender.blockOverlay": {
+      "label": "field.noRender.blockOverlay",
+      "kind": "toggle"
+    },
+    "noRender.portal": {
+      "label": "field.noRender.portal",
+      "kind": "toggle"
+    },
+    "noRender.nausea": {
+      "label": "field.noRender.nausea",
+      "kind": "toggle"
+    },
+    "noRender.vignette": {
+      "label": "field.noRender.vignette",
+      "kind": "toggle"
+    },
+    "noRender.bossBar": {
+      "label": "field.noRender.bossBar",
+      "kind": "toggle"
+    },
+    "noRender.waterOverlay": {
+      "label": "field.noRender.waterOverlay",
+      "kind": "toggle"
+    },
+    "noRender.waterFog": {
+      "label": "field.noRender.waterFog",
+      "kind": "toggle"
+    },
+    "noRender.lavaFog": {
+      "label": "field.noRender.lavaFog",
+      "kind": "toggle"
+    },
+    "noRender.weather": {
+      "label": "field.noRender.weather",
+      "kind": "toggle"
+    },
+    "tweaksy.mainLeftFix.enabled": {
+      "label": "field.mainLeftFix",
+      "kind": "toggle"
+    },
+    "tweaksy.commandFix.enabled": {
+      "label": "field.commandFix",
+      "kind": "toggle"
+    },
+    "tweaksy.cursorFix.enabled": {
+      "label": "field.cursorFix",
+      "kind": "toggle"
+    },
+    "tweaksy.fullBright.enabled": {
+      "label": "field.fullBright",
+      "kind": "toggle"
+    },
+    "tweaksy.fullBright.strength": {
+      "label": "field.fullBrightStrength",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ],
+      "condition": "tweaksy.fullBright.enabled"
+    },
+    "tweaksy.ownNametag.enabled": {
+      "label": "field.ownNametag",
+      "kind": "toggle"
+    },
+    "tweaksy.invisibleArmorNametag.enabled": {
+      "label": "field.invisibleArmorNametag",
+      "kind": "toggle"
+    },
+    "tweaksy.invisibleArmorNametag.hitbox": {
+      "label": "field.invisibleArmorHitbox",
+      "kind": "toggle",
+      "condition": "tweaksy.invisibleArmorNametag.enabled"
+    },
+    "swing.style": {
+      "label": "field.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "option.vanilla"
+        },
+        {
+          "value": "smooth",
+          "label": "option.smooth"
+        },
+        {
+          "value": "old",
+          "label": "option.old"
+        },
+        {
+          "value": "spin",
+          "label": "option.spin"
+        }
+      ]
+    },
+    "swing.speed": {
+      "label": "field.speed",
+      "kind": "slider",
+      "range": [
+        0.1,
+        5.0,
+        0.05
+      ]
+    },
+    "swing.amplitude": {
+      "label": "field.amplitude",
+      "kind": "slider",
+      "range": [
+        0.0,
+        3.0,
+        0.05
+      ]
+    },
+    "swing.rotateX": {
+      "label": "field.rotateX",
+      "kind": "slider",
+      "range": [
+        -360.0,
+        360.0,
+        1.0
+      ]
+    },
+    "swing.rotateY": {
+      "label": "field.rotateY",
+      "kind": "slider",
+      "range": [
+        -360.0,
+        360.0,
+        1.0
+      ]
+    },
+    "swing.rotateZ": {
+      "label": "field.rotateZ",
+      "kind": "slider",
+      "range": [
+        -360.0,
+        360.0,
+        1.0
+      ]
+    },
+    "swing.equip": {
+      "label": "field.equip",
+      "kind": "toggle"
+    },
+    "itemPhysics.rotationSpeed": {
+      "label": "field.rotationSpeed",
+      "kind": "slider",
+      "range": [
+        0.0,
+        5.0,
+        0.05
+      ]
+    },
+    "itemPhysics.grounded": {
+      "label": "field.grounded",
+      "kind": "toggle"
+    },
+    "freelook.smoothReturn": {
+      "label": "field.smoothReturn",
+      "kind": "toggle"
+    },
+    "freelook.returnSpeed": {
+      "label": "field.returnSpeed",
+      "kind": "slider",
+      "range": [
+        1.0,
+        30.0,
+        0.5
+      ]
+    },
+    "freelook.sensitivity": {
+      "label": "field.sensitivity",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3.0,
+        0.05
+      ]
+    },
+    "lowFire.hidden": {
+      "label": "field.hidden",
+      "kind": "toggle"
+    },
+    "lowFire.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.01
+      ]
+    },
+    "hud.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "hud.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        2,
+        0.01
+      ]
+    },
+    "hud.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "hud.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "hud.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "range": [
+        80,
+        500,
+        1
+      ]
+    },
+    "hud.spacing": {
+      "label": "field.spacing",
+      "kind": "slider",
+      "range": [
+        0,
+        24,
+        1
+      ]
+    },
+    "hud.maxVisible": {
+      "label": "field.maxVisible",
+      "kind": "slider",
+      "range": [
+        1,
+        16,
+        1
+      ]
+    },
+    "hud.icons": {
+      "label": "field.icons",
+      "kind": "toggle"
+    },
+    "hud.names": {
+      "label": "field.names",
+      "kind": "toggle"
+    },
+    "hud.time": {
+      "label": "field.time",
+      "kind": "toggle"
+    },
+    "hud.progress": {
+      "label": "field.progress",
+      "kind": "toggle"
+    },
+    "hud.background": {
+      "label": "field.background",
+      "kind": "toggle"
+    },
+    "hud.hideWhenEmpty": {
+      "label": "field.hideWhenEmpty",
+      "kind": "toggle"
+    },
+    "hud.hideWithGameHud": {
+      "label": "field.hideWithGameHud",
+      "kind": "toggle"
+    },
+    "hud.horizontal": {
+      "label": "field.horizontal",
+      "kind": "toggle"
+    },
+    "hud.snap": {
+      "label": "field.snap",
+      "kind": "toggle"
+    },
+    "hud.sort": {
+      "label": "field.sort",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "remaining",
+          "label": "option.remaining"
+        },
+        {
+          "value": "name",
+          "label": "option.name"
+        }
+      ]
+    },
+    "hud.fontScale": {
+      "label": "field.fontScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        2,
+        0.05
+      ]
+    },
+    "hud.rowHeight": {
+      "label": "field.rowHeight",
+      "kind": "slider",
+      "range": [
+        24,
+        64,
+        1
+      ]
+    },
+    "hud.iconScale": {
+      "label": "field.iconScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        2,
+        0.05
+      ]
+    },
+    "hud.progressHeight": {
+      "label": "field.progressHeight",
+      "kind": "slider",
+      "range": [
+        1,
+        6,
+        0.1
+      ]
+    },
+    "hud.showHeader": {
+      "label": "field.showHeader",
+      "kind": "toggle"
+    },
+    "tnt.range": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [
+        8.0,
+        256.0,
+        1.0
+      ]
+    },
+    "tnt.showDistance": {
+      "label": "field.showDistance",
+      "kind": "toggle"
+    },
+    "tnt.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3,
+        0.01
+      ]
+    },
+    "tnt.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "tnt.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "tnt.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "tnt.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "range": [
+        80,
+        500,
+        1
+      ]
+    },
+    "tnt.height": {
+      "label": "field.height",
+      "kind": "slider",
+      "range": [
+        24,
+        500,
+        1
+      ]
+    },
+    "inventory.hotbar": {
+      "label": "field.hotbar",
+      "kind": "toggle"
+    },
+    "inventory.rows": {
+      "label": "field.rows",
+      "kind": "slider",
+      "range": [
+        1.0,
+        3.0,
+        1.0
+      ]
+    },
+    "inventory.counts": {
+      "label": "field.counts",
+      "kind": "toggle"
+    },
+    "inventory.durability": {
+      "label": "field.durability",
+      "kind": "toggle"
+    },
+    "inventory.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3,
+        0.01
+      ]
+    },
+    "inventory.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "inventory.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "inventory.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "inventory.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "range": [
+        80,
+        500,
+        1
+      ]
+    },
+    "inventory.height": {
+      "label": "field.height",
+      "kind": "slider",
+      "range": [
+        24,
+        500,
+        1
+      ]
+    },
+    "armor.horizontal": {
+      "label": "field.horizontal",
+      "kind": "toggle"
+    },
+    "armor.durability": {
+      "label": "field.durability",
+      "kind": "toggle"
+    },
+    "armor.durabilityStyle": {
+      "label": "field.durabilityStyle",
+      "kind": "choice",
+      "condition": "armor.durability",
+      "options": [
+        {
+          "value": "auto",
+          "label": "choice.armor.durabilityStyle.auto"
+        },
+        {
+          "value": "vanilla",
+          "label": "choice.armor.durabilityStyle.vanilla"
+        },
+        {
+          "value": "bar",
+          "label": "choice.armor.durabilityStyle.bar"
+        },
+        {
+          "value": "text",
+          "label": "choice.armor.durabilityStyle.text"
+        }
+      ]
+    },
+    "armor.durabilityPosition": {
+      "label": "field.durabilityPosition",
+      "kind": "choice",
+      "condition": "armor.durability",
+      "options": [
+        {
+          "value": "below",
+          "label": "choice.armor.durability.below"
+        },
+        {
+          "value": "above",
+          "label": "choice.armor.durability.above"
+        }
+      ]
+    },
+    "armor.percent": {
+      "label": "field.percent",
+      "kind": "toggle",
+      "condition": "armor.durability"
+    },
+    "armor.names": {
+      "label": "field.names",
+      "kind": "toggle"
+    },
+    "armor.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3,
+        0.01
+      ]
+    },
+    "armor.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "armor.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "armor.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "potions.format": {
+      "label": "field.format",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "list",
+          "label": "choice.potions.list"
+        },
+        {
+          "value": "compact",
+          "label": "choice.potions.compact"
+        },
+        {
+          "value": "pills",
+          "label": "choice.potions.pills"
+        },
+        {
+          "value": "vanilla",
+          "label": "choice.potions.vanilla"
+        }
+      ]
+    },
+    "potions.horizontal": {
+      "label": "field.horizontal",
+      "kind": "toggle",
+      "condition": "potions.format=vanilla"
+    },
+    "potions.time": {
+      "label": "field.time",
+      "kind": "toggle"
+    },
+    "potions.level": {
+      "label": "field.level",
+      "kind": "toggle"
+    },
+    "potions.icons": {
+      "label": "field.icons",
+      "kind": "toggle",
+      "condition": "!potions.format=vanilla"
+    },
+    "potions.hideWhenEmpty": {
+      "label": "field.hideWhenEmpty",
+      "kind": "toggle"
+    },
+    "potions.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3,
+        0.01
+      ]
+    },
+    "potions.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "potions.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "potions.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "potions.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "condition": "!potions.format=vanilla",
+      "range": [
+        80,
+        500,
+        1
+      ]
+    },
+    "target.style": {
+      "label": "field.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "card",
+          "label": "option.card"
+        },
+        {
+          "value": "zakohp",
+          "label": "option.zakohp"
+        }
+      ]
+    },
+    "target.displaySeconds": {
+      "label": "field.displaySeconds",
+      "kind": "slider",
+      "range": [
+        0.2,
+        60.0,
+        0.2
+      ]
+    },
+    "target.absorption": {
+      "label": "field.absorption",
+      "kind": "toggle"
+    },
+    "target.distance": {
+      "label": "field.distance",
+      "kind": "toggle"
+    },
+    "target.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3,
+        0.01
+      ]
+    },
+    "target.opacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "target.offsetX": {
+      "label": "field.offsetX",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "target.offsetY": {
+      "label": "field.offsetY",
+      "kind": "slider",
+      "range": [
+        -128,
+        128,
+        0.5
+      ]
+    },
+    "target.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "range": [
+        80,
+        500,
+        1
+      ]
+    },
+    "target.height": {
+      "label": "field.height",
+      "kind": "slider",
+      "range": [
+        24,
+        500,
+        1
+      ]
+    },
+    "menu.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.75,
+        1.5,
+        0.01
+      ]
+    },
+    "menu.fontScale": {
+      "label": "field.fontScale",
+      "kind": "slider",
+      "range": [
+        0.8,
+        1.3,
+        0.01
+      ]
+    },
+    "menu.animationSpeed": {
+      "label": "field.animationSpeed",
+      "kind": "slider",
+      "range": [
+        0.25,
+        3.0,
+        0.05
+      ]
+    },
+    "menu.width": {
+      "label": "field.width",
+      "kind": "slider",
+      "range": [
+        440,
+        1600,
+        10
+      ]
+    },
+    "menu.height": {
+      "label": "field.height",
+      "kind": "slider",
+      "range": [
+        360,
+        1000,
+        10
+      ]
+    },
+    "theme.accent": {
+      "label": "field.accent",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.secondaryAccent": {
+      "label": "field.secondaryAccent",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.backgroundOpacity": {
+      "label": "field.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "theme.radius": {
+      "label": "field.radius",
+      "kind": "slider",
+      "range": [
+        0.0,
+        16.0,
+        1.0
+      ]
+    },
+    "theme.borderWidth": {
+      "label": "field.borderWidth",
+      "kind": "slider",
+      "range": [
+        0.0,
+        3.0,
+        0.1
+      ]
+    },
+    "theme.background": {
+      "label": "field.background",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.surface": {
+      "label": "field.surface",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.raised": {
+      "label": "field.raised",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.text": {
+      "label": "field.text",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.muted": {
+      "label": "field.muted",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.border": {
+      "label": "field.border",
+      "kind": "color",
+      "format": "hex"
+    },
+    "theme.blurRadius": {
+      "label": "field.blurRadius",
+      "kind": "slider",
+      "range": [
+        0.0,
+        32.0,
+        0.5
+      ],
+      "condition": "theme.effects.backgroundBlur"
+    },
+    "theme.blurQuality": {
+      "label": "field.blurQuality",
+      "kind": "slider",
+      "range": [
+        1.0,
+        6.0,
+        1.0
+      ],
+      "condition": "theme.effects.backgroundBlur"
+    },
+    "theme.fontTracking": {
+      "label": "field.fontTracking",
+      "kind": "slider",
+      "range": [
+        -0.6,
+        2.0,
+        0.05
+      ]
+    },
+    "theme.fontWeight": {
+      "label": "field.fontWeight",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "regular",
+          "label": "option.regular"
+        },
+        {
+          "value": "bold",
+          "label": "option.bold"
+        }
+      ]
+    },
+    "theme.effects.backgroundBlur": {
+      "label": "field.backgroundBlur",
+      "kind": "toggle"
+    },
+    "theme.effects.grain": {
+      "label": "field.grain",
+      "kind": "toggle"
+    },
+    "theme.effects.grainAmount": {
+      "label": "field.grainAmount",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.15,
+        0.005
+      ],
+      "condition": "theme.effects.grain"
+    },
+    "theme.effects.grainScale": {
+      "label": "field.grainScale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        4.0,
+        0.05
+      ],
+      "condition": "theme.effects.grain"
+    },
+    "theme.motion.duration": {
+      "label": "field.duration",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.6,
+        0.01
+      ]
+    },
+    "theme.motion.enterDuration": {
+      "label": "field.enterDuration",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.01
+      ]
+    },
+    "theme.motion.exitDuration": {
+      "label": "field.exitDuration",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.6,
+        0.01
+      ]
+    },
+    "theme.motion.easing": {
+      "label": "field.easing",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "linear",
+          "label": "option.linear"
+        },
+        {
+          "value": "cubic-out",
+          "label": "option.cubic-out"
+        },
+        {
+          "value": "cubic-in-out",
+          "label": "option.cubic-in-out"
+        },
+        {
+          "value": "quint-out",
+          "label": "option.quint-out"
+        },
+        {
+          "value": "smooth",
+          "label": "option.smooth"
+        }
+      ]
+    },
+    "theme.motion.hoverScale": {
+      "label": "field.hoverScale",
+      "kind": "slider",
+      "range": [
+        1.0,
+        1.15,
+        0.005
+      ]
+    },
+    "theme.motion.pressScale": {
+      "label": "field.pressScale",
+      "kind": "slider",
+      "range": [
+        0.85,
+        1.0,
+        0.005
+      ]
+    },
+    "theme.motion.enterOpacity": {
+      "label": "field.enterOpacity",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ]
+    },
+    "theme.motion.enterOffsetX": {
+      "label": "field.enterOffsetX",
+      "kind": "slider",
+      "range": [
+        -30.0,
+        30.0,
+        1.0
+      ]
+    },
+    "theme.motion.enterOffsetY": {
+      "label": "field.enterOffsetY",
+      "kind": "slider",
+      "range": [
+        -30.0,
+        30.0,
+        1.0
+      ]
+    },
+    "theme.motion.layout": {
+      "label": "field.layout",
+      "kind": "toggle"
+    },
+    "theme.motion.value": {
+      "label": "field.value",
+      "kind": "toggle"
+    },
+    "theme.motion.stagger": {
+      "label": "field.stagger",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.1,
+        0.005
+      ]
+    },
+    "theme.motion.numericMotion": {
+      "label": "field.numericMotion",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "off",
+          "label": "numericMotion.off"
+        },
+        {
+          "value": "roll",
+          "label": "numericMotion.roll"
+        },
+        {
+          "value": "fade",
+          "label": "numericMotion.fade"
+        },
+        {
+          "value": "slide",
+          "label": "numericMotion.slide"
+        }
+      ]
+    },
+    "menu.vanillaBlur": {
+      "label": "field.vanillaBlur",
+      "kind": "toggle"
+    },
+    "menu.hudScale": {
+      "kind": "slider",
+      "label": "ui.hud_size",
+      "range": [
+        0.5,
+        2,
+        0.01
+      ]
+    },
+    "menu.chatHudEditor": {
+      "label": "field.menu.chatHudEditor",
+      "kind": "toggle"
+    },
+    "theme.blurMix": {
+      "label": "field.blurMix",
+      "kind": "slider",
+      "range": [
+        0,
+        1,
+        0.01
+      ],
+      "condition": "theme.effects.backgroundBlur"
+    },
+    "waypoints.badge": {
+      "label": "field.badgeSize",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "waypoints.chatCoordinates": {
+      "label": "field.waypoints.chatCoordinates",
+      "kind": "toggle"
+    },
+    "waypoints.hideNearby": {
+      "label": "field.waypoints.hideNearby",
+      "kind": "toggle"
+    },
+    "waypoints.hideNearbyRadius": {
+      "label": "field.waypoints.hideNearbyRadius",
+      "kind": "slider",
+      "range": [
+        1,
+        100,
+        1
+      ],
+      "condition": "waypoints.hideNearby"
+    },
+    "damageSplash.crits": {
+      "label": "field.damageSplash.crits",
+      "kind": "toggle"
+    },
+    "damageSplash.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.5,
+        0.05
+      ]
+    },
+    "damageSplash.duration": {
+      "label": "field.duration",
+      "kind": "slider",
+      "range": [
+        0.5,
+        3.0,
+        0.1
+      ]
+    },
+    "damageSplash.colorMode": {
+      "label": "field.colorMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "dynamic",
+          "label": "choice.damageSplash.dynamic"
+        },
+        {
+          "value": "custom",
+          "label": "choice.damageSplash.custom"
+        },
+        {
+          "value": "accent",
+          "label": "choice.damageSplash.accent"
+        }
+      ]
+    },
+    "damageSplash.color": {
+      "label": "field.color",
+      "kind": "color"
+    },
+    "damageSplash.critColor": {
+      "label": "field.damageSplash.critColor",
+      "kind": "color"
+    },
+    "scoreboard.font": {
+      "label": "field.scoreboard.font",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "minecraft",
+          "label": "choice.scoreboard.vanilla"
+        },
+        {
+          "value": "visual",
+          "label": "choice.scoreboard.nightclient"
+        }
+      ]
+    },
+    "scoreboard.hideScores": {
+      "label": "field.scoreboard.hideScores",
+      "kind": "toggle"
+    },
+    "scoreboard.cleanAds": {
+      "label": "field.scoreboard.cleanAds",
+      "kind": "toggle"
+    },
+    "scoreboard.background": {
+      "label": "field.background",
+      "kind": "toggle"
+    },
+    "scoreboard.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "scoreboard.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "keystrokes.mouseButtons": {
+      "label": "field.keystrokes.mouseButtons",
+      "kind": "toggle"
+    },
+    "keystrokes.space": {
+      "label": "field.keystrokes.space",
+      "kind": "toggle"
+    },
+    "keystrokes.cps": {
+      "label": "field.keystrokes.cps",
+      "kind": "toggle"
+    },
+    "keystrokes.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "keystrokes.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "coordinates.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "coordinates.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "ping.colored": {
+      "label": "field.ping.colored",
+      "kind": "toggle"
+    },
+    "ping.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "ping.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "fps.colored": {
+      "label": "field.fps.colored",
+      "kind": "toggle"
+    },
+    "fps.background": {
+      "label": "field.background",
+      "kind": "toggle"
+    },
+    "fps.opacity": {
+      "label": "field.opacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "fps.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "hwhelper.aucprice.enabled": {
+      "label": "field.hwhelper.aucprice",
+      "kind": "toggle"
+    },
+    "hwhelper.answap.enabled": {
+      "label": "field.hwhelper.answap",
+      "kind": "toggle"
+    },
+    "hwhelper.betterSell.enabled": {
+      "label": "field.hwhelper.betterSell",
+      "kind": "toggle"
+    },
+    "playerHealth.style": {
+      "label": "field.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "pill",
+          "label": "choice.playerHealth.pill"
+        },
+        {
+          "value": "hearts",
+          "label": "choice.playerHealth.hearts"
+        }
+      ]
+    },
+    "playerHealth.height": {
+      "label": "field.playerHealth.height",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "playerHealth.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.6,
+        0.05
+      ]
+    },
+    "playerHealth.showInvisible": {
+      "label": "field.playerHealth.showInvisible",
+      "kind": "toggle"
+    },
+    "playerHealth.showAbsorption": {
+      "label": "field.playerHealth.showAbsorption",
+      "kind": "toggle"
+    },
+    "playerHealth.showEnchanted": {
+      "label": "field.playerHealth.showEnchanted",
+      "kind": "toggle"
+    },
+    "playerHealth.maxDistance": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [
+        8.0,
+        128.0,
+        1.0
+      ]
+    },
+    "totemCounter.height": {
+      "label": "field.totemCounter.height",
+      "kind": "slider",
+      "range": [
+        -0.5,
+        0.8,
+        0.05
+      ]
+    },
+    "totemCounter.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.6,
+        0.05
+      ]
+    },
+    "totemCounter.showZero": {
+      "label": "field.totemCounter.showZero",
+      "kind": "toggle"
+    },
+    "totemCounter.showInvisible": {
+      "label": "field.totemCounter.showInvisible",
+      "kind": "toggle"
+    },
+    "totemCounter.resetOnDeath": {
+      "label": "field.totemCounter.resetOnDeath",
+      "kind": "toggle"
+    },
+    "totemCounter.maxDistance": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [
+        8.0,
+        128.0,
+        1.0
+      ]
+    },
+    "customSky.style": {
+      "label": "field.customSky.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "choice.customSky.style.vanilla"
+        },
+        {
+          "value": "galaxy",
+          "label": "choice.customSky.style.galaxy"
+        },
+        {
+          "value": "aurora",
+          "label": "choice.customSky.style.aurora"
+        },
+        {
+          "value": "sunset",
+          "label": "choice.customSky.style.sunset"
+        },
+        {
+          "value": "anime",
+          "label": "choice.customSky.style.anime"
+        },
+        {
+          "value": "blood_moon",
+          "label": "choice.customSky.style.blood_moon"
+        },
+        {
+          "value": "pastel",
+          "label": "choice.customSky.style.pastel"
+        }
+      ]
+    },
+    "customSky.timeMode": {
+      "label": "field.customSky.timeMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "server",
+          "label": "choice.customSky.timeMode.server"
+        },
+        {
+          "value": "day",
+          "label": "choice.customSky.timeMode.day"
+        },
+        {
+          "value": "sunset",
+          "label": "choice.customSky.timeMode.sunset"
+        },
+        {
+          "value": "night",
+          "label": "choice.customSky.timeMode.night"
+        },
+        {
+          "value": "midnight",
+          "label": "choice.customSky.timeMode.midnight"
+        },
+        {
+          "value": "custom",
+          "label": "choice.customSky.timeMode.custom"
+        }
+      ]
+    },
+    "customSky.customTime": {
+      "label": "field.customSky.customTime",
+      "kind": "slider",
+      "range": [
+        0.0,
+        24000.0,
+        250.0
+      ]
+    },
+    "customSky.useCustomColors": {
+      "label": "field.customSky.useCustomColors",
+      "kind": "toggle"
+    },
+    "customSky.topColor": {
+      "label": "field.customSky.topColor",
+      "kind": "color"
+    },
+    "customSky.horizonColor": {
+      "label": "field.customSky.horizonColor",
+      "kind": "color"
+    },
+    "customSky.accentColor": {
+      "label": "field.customSky.accentColor",
+      "kind": "color"
+    },
+    "customSky.brightness": {
+      "label": "field.customSky.brightness",
+      "kind": "slider",
+      "range": [
+        30.0,
+        160.0,
+        5.0
+      ]
+    },
+    "customSky.rotationSpeed": {
+      "label": "field.customSky.rotationSpeed",
+      "kind": "slider",
+      "range": [
+        0.0,
+        200.0,
+        5.0
+      ]
+    },
+    "customSky.stars": {
+      "label": "field.customSky.stars",
+      "kind": "slider",
+      "range": [
+        0.0,
+        100.0,
+        5.0
+      ]
+    },
+    "customSky.clouds": {
+      "label": "field.customSky.clouds",
+      "kind": "slider",
+      "range": [
+        0.0,
+        100.0,
+        5.0
+      ]
+    },
+    "customSky.celestial": {
+      "label": "field.customSky.celestial",
+      "kind": "toggle"
+    },
+    "customSky.celestialSize": {
+      "label": "field.customSky.celestialSize",
+      "kind": "slider",
+      "range": [
+        40.0,
+        220.0,
+        5.0
+      ]
+    },
+    "customSky.celestialHeight": {
+      "label": "field.customSky.celestialHeight",
+      "kind": "slider",
+      "range": [
+        5.0,
+        75.0,
+        1.0
+      ]
+    },
+    "customSky.horizonGlow": {
+      "label": "field.customSky.horizonGlow",
+      "kind": "slider",
+      "range": [
+        0.0,
+        100.0,
+        5.0
+      ]
+    },
+    "customSky.endAndNether": {
+      "label": "field.customSky.endAndNether",
+      "kind": "toggle"
+    },
+    "theme.mode": {
+      "label": "field.themeMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "dark",
+          "label": "theme.dark"
+        },
+        {
+          "value": "light",
+          "label": "theme.light"
+        },
+        {
+          "value": "custom",
+          "label": "theme.custom"
+        }
+      ]
+    },
+    "theme.customBackground": {
+      "label": "field.background",
+      "kind": "color"
+    },
+    "theme.customSurface": {
+      "label": "field.surface",
+      "kind": "color"
+    },
+    "theme.customRaised": {
+      "label": "field.raised",
+      "kind": "color"
+    },
+    "theme.customText": {
+      "label": "field.text",
+      "kind": "color"
+    },
+    "armor.style": {
+      "label": "field.armorStyle",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "visual",
+          "label": "option.visual"
+        },
+        {
+          "value": "minecraft",
+          "label": "option.minecraft"
+        }
+      ]
+    },
+    "theme.customAccent": {
+      "label": "field.accent",
+      "kind": "color"
+    },
+    "atmosphere.mode": {
+      "label": "field.atmosphere.mode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "dawn",
+          "label": "choice.atmosphere.mode.dawn"
+        },
+        {
+          "value": "dust",
+          "label": "choice.atmosphere.mode.dust"
+        },
+        {
+          "value": "snow",
+          "label": "choice.atmosphere.mode.snow"
+        },
+        {
+          "value": "sakura",
+          "label": "choice.atmosphere.mode.sakura"
+        },
+        {
+          "value": "autumn",
+          "label": "choice.atmosphere.mode.autumn"
+        },
+        {
+          "value": "fireflies",
+          "label": "choice.atmosphere.mode.fireflies"
+        },
+        {
+          "value": "mystic",
+          "label": "choice.atmosphere.mode.mystic"
+        }
+      ]
+    },
+    "atmosphere.density": {
+      "label": "field.atmosphere.density",
+      "kind": "slider",
+      "range": [
+        0.05,
+        0.8,
+        0.01
+      ]
+    },
+    "atmosphere.scatterHeight": {
+      "label": "field.atmosphere.scatterHeight",
+      "kind": "slider",
+      "range": [
+        60,
+        120,
+        1
+      ]
+    },
+    "atmosphere.godRays": {
+      "label": "field.atmosphere.godRays",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.softness": {
+      "label": "field.atmosphere.softness",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.dawnColor": {
+      "label": "field.atmosphere.dawnColor",
+      "kind": "color"
+    },
+    "atmosphere.amount": {
+      "label": "field.atmosphere.amount",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.ground": {
+      "label": "field.atmosphere.ground",
+      "kind": "slider",
+      "range": [
+        0,
+        200,
+        5
+      ]
+    },
+    "atmosphere.speed": {
+      "label": "field.atmosphere.speed",
+      "kind": "slider",
+      "range": [
+        10,
+        300,
+        5
+      ]
+    },
+    "atmosphere.haze": {
+      "label": "field.atmosphere.haze",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.grade": {
+      "label": "field.atmosphere.grade",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.vignette": {
+      "label": "field.atmosphere.vignette",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        1
+      ]
+    },
+    "atmosphere.quality": {
+      "label": "field.atmosphere.quality",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "low",
+          "label": "choice.atmosphere.quality.low"
+        },
+        {
+          "value": "medium",
+          "label": "choice.atmosphere.quality.medium"
+        },
+        {
+          "value": "high",
+          "label": "choice.atmosphere.quality.high"
+        }
+      ]
+    },
+    "atmosphere.snowCover.frost": {
+      "label": "field.atmosphere.snowCover.frost",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.shelter": {
+      "label": "field.atmosphere.snowCover.shelter",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.coldShadows": {
+      "label": "field.atmosphere.snowCover.coldShadows",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.drifts": {
+      "label": "field.atmosphere.snowCover.drifts",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.thickness": {
+      "label": "field.atmosphere.snowCover.thickness",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.texture": {
+      "label": "field.atmosphere.snowCover.texture",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.sparkle": {
+      "label": "field.atmosphere.snowCover.sparkle",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.leaves": {
+      "label": "field.atmosphere.snowCover.leaves",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.ice": {
+      "label": "field.atmosphere.snowCover.ice",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.cloudShadows": {
+      "label": "field.atmosphere.snowCover.cloudShadows",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowCover.daytime": {
+      "label": "field.atmosphere.snowCover.daytime",
+      "kind": "toggle"
+    },
+    "atmosphere.snowfall.flakeSize": {
+      "label": "field.atmosphere.snowfall.flakeSize",
+      "kind": "slider",
+      "range": [
+        50,
+        200,
+        5
+      ]
+    },
+    "atmosphere.snowfall.clumps": {
+      "label": "field.atmosphere.snowfall.clumps",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowfall.wind": {
+      "label": "field.atmosphere.snowfall.wind",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowfall.spindrift": {
+      "label": "field.atmosphere.snowfall.spindrift",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.snowfall.farSnow": {
+      "label": "field.atmosphere.snowfall.farSnow",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakura.blossom": {
+      "label": "field.atmosphere.sakura.blossom",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakura.blossomColor": {
+      "label": "field.atmosphere.sakura.blossomColor",
+      "kind": "color"
+    },
+    "atmosphere.sakura.wholeFlowers": {
+      "label": "field.atmosphere.sakura.wholeFlowers",
+      "kind": "slider",
+      "range": [
+        0,
+        30,
+        1
+      ]
+    },
+    "atmosphere.sakura.gusts": {
+      "label": "field.atmosphere.sakura.gusts",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakura.nearTrees": {
+      "label": "field.atmosphere.sakura.nearTrees",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakura.hotaru": {
+      "label": "field.atmosphere.sakura.hotaru",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraWater.petals": {
+      "label": "field.atmosphere.sakuraWater.petals",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraWater.moonPath": {
+      "label": "field.atmosphere.sakuraWater.moonPath",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraWater.reflections": {
+      "label": "field.atmosphere.sakuraWater.reflections",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraWater.mist": {
+      "label": "field.atmosphere.sakuraWater.mist",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraSky.volcano": {
+      "label": "field.atmosphere.sakuraSky.volcano",
+      "kind": "toggle"
+    },
+    "atmosphere.sakuraSky.pagoda": {
+      "label": "field.atmosphere.sakuraSky.pagoda",
+      "kind": "toggle"
+    },
+    "atmosphere.sakuraSky.clouds": {
+      "label": "field.atmosphere.sakuraSky.clouds",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.sakuraSky.stars": {
+      "label": "field.atmosphere.sakuraSky.stars",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnTrees.treeColors": {
+      "label": "field.atmosphere.autumnTrees.treeColors",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnTrees.evergreen": {
+      "label": "field.atmosphere.autumnTrees.evergreen",
+      "kind": "toggle"
+    },
+    "atmosphere.autumnTrees.bareTrees": {
+      "label": "field.atmosphere.autumnTrees.bareTrees",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnGround.piles": {
+      "label": "field.atmosphere.autumnGround.piles",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnGround.dryGrass": {
+      "label": "field.atmosphere.autumnGround.dryGrass",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnGround.puddles": {
+      "label": "field.atmosphere.autumnGround.puddles",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnGround.dew": {
+      "label": "field.atmosphere.autumnGround.dew",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnAir.leafShapes": {
+      "label": "field.atmosphere.autumnAir.leafShapes",
+      "kind": "toggle"
+    },
+    "atmosphere.autumnAir.leafGlow": {
+      "label": "field.atmosphere.autumnAir.leafGlow",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnAir.whirls": {
+      "label": "field.atmosphere.autumnAir.whirls",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnAir.skitter": {
+      "label": "field.atmosphere.autumnAir.skitter",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnAir.gossamer": {
+      "label": "field.atmosphere.autumnAir.gossamer",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnSky.clouds": {
+      "label": "field.atmosphere.autumnSky.clouds",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnSky.birds": {
+      "label": "field.atmosphere.autumnSky.birds",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnSky.farForest": {
+      "label": "field.atmosphere.autumnSky.farForest",
+      "kind": "toggle"
+    },
+    "atmosphere.autumnSky.mist": {
+      "label": "field.atmosphere.autumnSky.mist",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.autumnSky.sunHeight": {
+      "label": "field.atmosphere.autumnSky.sunHeight",
+      "kind": "slider",
+      "range": [
+        5,
+        35,
+        1
+      ]
+    },
+    "atmosphere.autumnSky.sunRays": {
+      "label": "field.atmosphere.autumnSky.sunRays",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.moon": {
+      "label": "field.atmosphere.mysticSky.moon",
+      "kind": "toggle"
+    },
+    "atmosphere.mysticSky.moonColor": {
+      "label": "field.atmosphere.mysticSky.moonColor",
+      "kind": "color"
+    },
+    "atmosphere.mysticSky.moonSize": {
+      "label": "field.atmosphere.mysticSky.moonSize",
+      "kind": "slider",
+      "range": [
+        40,
+        250,
+        5
+      ],
+      "condition": "atmosphere.mysticSky.moon"
+    },
+    "atmosphere.mysticSky.moonHeight": {
+      "label": "field.atmosphere.mysticSky.moonHeight",
+      "kind": "slider",
+      "range": [
+        6,
+        60,
+        1
+      ],
+      "condition": "atmosphere.mysticSky.moon"
+    },
+    "atmosphere.mysticSky.halo": {
+      "label": "field.atmosphere.mysticSky.halo",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ],
+      "condition": "atmosphere.mysticSky.moon"
+    },
+    "atmosphere.mysticSky.moonRays": {
+      "label": "field.atmosphere.mysticSky.moonRays",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ],
+      "condition": "atmosphere.mysticSky.moon"
+    },
+    "atmosphere.mysticSky.stars": {
+      "label": "field.atmosphere.mysticSky.stars",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.meteors": {
+      "label": "field.atmosphere.mysticSky.meteors",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.clouds": {
+      "label": "field.atmosphere.mysticSky.clouds",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.cloudShadows": {
+      "label": "field.atmosphere.mysticSky.cloudShadows",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.lightning": {
+      "label": "field.atmosphere.mysticSky.lightning",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticSky.silhouettes": {
+      "label": "field.atmosphere.mysticSky.silhouettes",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticFog.groundFog": {
+      "label": "field.atmosphere.mysticFog.groundFog",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticFog.fogHeight": {
+      "label": "field.atmosphere.mysticFog.fogHeight",
+      "kind": "slider",
+      "range": [
+        0.5,
+        6.0,
+        0.5
+      ]
+    },
+    "atmosphere.mysticFog.fogTendrils": {
+      "label": "field.atmosphere.mysticFog.fogTendrils",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticFog.fogColor": {
+      "label": "field.atmosphere.mysticFog.fogColor",
+      "kind": "color"
+    },
+    "atmosphere.mysticWorld.alwaysNight": {
+      "label": "field.atmosphere.mysticWorld.alwaysNight",
+      "kind": "toggle"
+    },
+    "atmosphere.mysticWorld.moonlight": {
+      "label": "field.atmosphere.mysticWorld.moonlight",
+      "kind": "slider",
+      "range": [
+        0,
+        200,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.coldShadows": {
+      "label": "field.atmosphere.mysticWorld.coldShadows",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.blueNight": {
+      "label": "field.atmosphere.mysticWorld.blueNight",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.wither": {
+      "label": "field.atmosphere.mysticWorld.wither",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.wetness": {
+      "label": "field.atmosphere.mysticWorld.wetness",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.puddles": {
+      "label": "field.atmosphere.mysticWorld.puddles",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWorld.reflections": {
+      "label": "field.atmosphere.mysticWorld.reflections",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLens.bokeh": {
+      "label": "field.atmosphere.mysticLens.bokeh",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLens.grain": {
+      "label": "field.atmosphere.mysticLens.grain",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLife.bats": {
+      "label": "field.atmosphere.mysticLife.bats",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLife.batColony": {
+      "label": "field.atmosphere.mysticLife.batColony",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLife.wisps": {
+      "label": "field.atmosphere.mysticLife.wisps",
+      "kind": "toggle"
+    },
+    "atmosphere.mysticLife.wispsColor": {
+      "label": "field.atmosphere.mysticLife.wispsColor",
+      "kind": "color"
+    },
+    "atmosphere.mysticLife.wispCount": {
+      "label": "field.atmosphere.mysticLife.wispCount",
+      "kind": "slider",
+      "range": [
+        1,
+        4,
+        1
+      ],
+      "condition": "atmosphere.mysticLife.wisps"
+    },
+    "atmosphere.mysticLife.webs": {
+      "label": "field.atmosphere.mysticLife.webs",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticLife.ghosts": {
+      "label": "field.atmosphere.mysticLife.ghosts",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWind.gusts": {
+      "label": "field.atmosphere.mysticWind.gusts",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWind.skitter": {
+      "label": "field.atmosphere.mysticWind.skitter",
+      "kind": "slider",
+      "range": [
+        0,
+        100,
+        5
+      ]
+    },
+    "atmosphere.mysticWind.leafSize": {
+      "label": "field.atmosphere.mysticWind.leafSize",
+      "kind": "slider",
+      "range": [
+        50,
+        200,
+        5
+      ]
+    },
+    "playerPing.inWorld": {
+      "label": "field.playerPing.inWorld",
+      "kind": "toggle"
+    },
+    "playerPing.inTab": {
+      "label": "field.playerPing.inTab",
+      "kind": "toggle"
+    },
+    "playerPing.tabKeepBars": {
+      "label": "field.playerPing.tabKeepBars",
+      "kind": "toggle",
+      "condition": "playerPing.inTab"
+    },
+    "playerPing.style": {
+      "label": "field.style",
+      "kind": "choice",
+      "condition": "playerPing.inWorld",
+      "options": [
+        {
+          "value": "badge",
+          "label": "choice.playerPing.badge"
+        },
+        {
+          "value": "text",
+          "label": "choice.playerPing.text"
+        }
+      ]
+    },
+    "playerPing.colored": {
+      "label": "field.ping.colored",
+      "kind": "toggle"
+    },
+    "playerPing.showSelf": {
+      "label": "field.playerPing.showSelf",
+      "kind": "toggle",
+      "condition": "playerPing.inWorld"
+    },
+    "playerPing.showInvisible": {
+      "label": "field.playerHealth.showInvisible",
+      "kind": "toggle",
+      "condition": "playerPing.inWorld"
+    },
+    "playerPing.height": {
+      "label": "field.playerPing.height",
+      "kind": "slider",
+      "condition": "playerPing.inWorld",
+      "range": [
+        -0.5,
+        1.5,
+        0.05
+      ]
+    },
+    "playerPing.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "condition": "playerPing.inWorld",
+      "range": [
+        0.6,
+        1.6,
+        0.05
+      ]
+    },
+    "playerPing.maxDistance": {
+      "label": "field.range",
+      "kind": "slider",
+      "condition": "playerPing.inWorld",
+      "range": [
+        8.0,
+        128.0,
+        1.0
+      ]
+    },
+    "safeCtLeave.blockDisconnect": {
+      "label": "field.safeCtLeave.blockDisconnect",
+      "kind": "toggle"
+    },
+    "safeCtLeave.confirmDisconnect": {
+      "label": "field.safeCtLeave.confirmDisconnect",
+      "kind": "toggle",
+      "condition": "safeCtLeave.blockDisconnect"
+    },
+    "safeCtLeave.blockWindowClose": {
+      "label": "field.safeCtLeave.blockWindowClose",
+      "kind": "toggle"
+    },
+    "safeCtLeave.blockCommands": {
+      "label": "field.safeCtLeave.blockCommands",
+      "kind": "toggle"
+    },
+    "safeCtLeave.shiftBypass": {
+      "label": "field.safeCtLeave.shiftBypass",
+      "kind": "toggle"
+    },
+    "safeCtLeave.detectPvpHits": {
+      "label": "field.safeCtLeave.detectPvpHits",
+      "kind": "toggle"
+    },
+    "safeCtLeave.fallbackSeconds": {
+      "label": "field.safeCtLeave.fallbackSeconds",
+      "kind": "slider",
+      "range": [
+        5,
+        30,
+        1
+      ],
+      "condition": "safeCtLeave.detectPvpHits"
+    },
+    "safeCtLeave.showBanner": {
+      "label": "field.safeCtLeave.showBanner",
+      "kind": "toggle"
+    },
+    "betterChat.backgroundStyle": {
+      "label": "field.betterChat.backgroundStyle",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "rounded",
+          "label": "choice.betterChat.bg.rounded"
+        },
+        {
+          "value": "compact",
+          "label": "choice.betterChat.bg.compact"
+        },
+        {
+          "value": "transparent",
+          "label": "choice.betterChat.bg.transparent"
+        },
+        {
+          "value": "vanilla",
+          "label": "choice.betterChat.bg.vanilla"
+        }
+      ]
+    },
+    "betterChat.backgroundOpacity": {
+      "label": "field.betterChat.backgroundOpacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "betterChat.blur": {
+      "label": "field.betterChat.blur",
+      "kind": "toggle"
+    },
+    "betterChat.animation": {
+      "label": "field.betterChat.animation",
+      "kind": "toggle"
+    },
+    "betterChat.animationSpeed": {
+      "label": "field.betterChat.animationSpeed",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.5,
+        0.1
+      ],
+      "condition": "betterChat.animation"
+    },
+    "betterChat.stackDuplicates": {
+      "label": "field.betterChat.stackDuplicates",
+      "kind": "toggle"
+    },
+    "betterChat.timestamps": {
+      "label": "field.betterChat.timestamps",
+      "kind": "toggle"
+    },
+    "betterChat.timestampSeconds": {
+      "label": "field.betterChat.timestampSeconds",
+      "kind": "toggle",
+      "condition": "betterChat.timestamps"
+    },
+    "betterChat.keepHistory": {
+      "label": "field.betterChat.keepHistory",
+      "kind": "toggle"
+    },
+    "betterChat.historyLimit": {
+      "label": "field.betterChat.historyLimit",
+      "kind": "slider",
+      "range": [
+        100,
+        2000,
+        100
+      ]
+    },
+    "betterChat.copyOnClick": {
+      "label": "field.betterChat.copyOnClick",
+      "kind": "toggle"
+    },
+    "betterChat.keepDraft": {
+      "label": "field.betterChat.keepDraft",
+      "kind": "toggle"
+    },
+    "betterChat.hideSignatureBar": {
+      "label": "field.betterChat.hideSignatureBar",
+      "kind": "toggle"
+    },
+    "betterChat.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "blockOverlay.mode": {
+      "label": "field.blockOverlay.mode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "both",
+          "label": "choice.blockOverlay.both"
+        },
+        {
+          "value": "outline",
+          "label": "choice.blockOverlay.outline"
+        },
+        {
+          "value": "fill",
+          "label": "choice.blockOverlay.fill"
+        },
+        {
+          "value": "corners",
+          "label": "choice.blockOverlay.corners"
+        }
+      ]
+    },
+    "blockOverlay.useThemeAccent": {
+      "label": "field.blockOverlay.useThemeAccent",
+      "kind": "toggle"
+    },
+    "blockOverlay.color": {
+      "label": "field.color",
+      "kind": "color",
+      "format": "hex",
+      "condition": "!blockOverlay.useThemeAccent"
+    },
+    "blockOverlay.outlineOpacity": {
+      "label": "field.blockOverlay.outlineOpacity",
+      "kind": "slider",
+      "range": [
+        0.05,
+        1.0,
+        0.05
+      ]
+    },
+    "blockOverlay.fillOpacity": {
+      "label": "field.blockOverlay.fillOpacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.6,
+        0.02
+      ]
+    },
+    "blockOverlay.lineWidth": {
+      "label": "field.lineWidth",
+      "kind": "slider",
+      "range": [
+        0.5,
+        5.0,
+        0.1
+      ]
+    },
+    "blockOverlay.smooth": {
+      "label": "field.blockOverlay.smooth",
+      "kind": "toggle"
+    },
+    "blockOverlay.smoothSpeed": {
+      "label": "field.blockOverlay.smoothSpeed",
+      "kind": "slider",
+      "range": [
+        2.0,
+        35.0,
+        1.0
+      ],
+      "condition": "blockOverlay.smooth"
+    },
+    "blockOverlay.exactShape": {
+      "label": "field.blockOverlay.exactShape",
+      "kind": "toggle"
+    },
+    "blockOverlay.pulse": {
+      "label": "field.blockOverlay.pulse",
+      "kind": "toggle"
+    },
+    "enchantGlint.colorMode": {
+      "label": "field.enchantGlint.colorMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "custom",
+          "label": "choice.enchantGlint.custom"
+        },
+        {
+          "value": "theme",
+          "label": "choice.enchantGlint.theme"
+        },
+        {
+          "value": "preset",
+          "label": "choice.enchantGlint.modePreset"
+        },
+        {
+          "value": "chroma",
+          "label": "choice.enchantGlint.chroma"
+        }
+      ]
+    },
+    "enchantGlint.preset": {
+      "label": "field.preset",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "amethyst",
+          "label": "choice.enchantGlint.preset.amethyst"
+        },
+        {
+          "value": "crimson",
+          "label": "choice.enchantGlint.preset.crimson"
+        },
+        {
+          "value": "cyan",
+          "label": "choice.enchantGlint.preset.cyan"
+        },
+        {
+          "value": "gold",
+          "label": "choice.enchantGlint.preset.gold"
+        },
+        {
+          "value": "emerald",
+          "label": "choice.enchantGlint.preset.emerald"
+        },
+        {
+          "value": "sakura",
+          "label": "choice.enchantGlint.preset.sakura"
+        },
+        {
+          "value": "white",
+          "label": "choice.enchantGlint.preset.white"
+        }
+      ]
+    },
+    "enchantGlint.color": {
+      "label": "field.color",
+      "kind": "color",
+      "format": "hex"
+    },
+    "enchantGlint.intensity": {
+      "label": "field.enchantGlint.intensity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "enchantGlint.speed": {
+      "label": "field.enchantGlint.speed",
+      "kind": "slider",
+      "range": [
+        0.1,
+        3.0,
+        0.1
+      ]
+    },
+    "wavyCapes.preset": {
+      "label": "field.preset",
+      "kind": "choice",
+      "options": [
+        { "value": "silk", "label": "choice.wavyCapes.preset.silk" },
+        { "value": "classic", "label": "choice.wavyCapes.preset.classic" },
+        { "value": "royal", "label": "choice.wavyCapes.preset.royal" },
+        { "value": "ethereal", "label": "choice.wavyCapes.preset.ethereal" },
+        { "value": "voxel", "label": "choice.wavyCapes.preset.voxel" },
+        { "value": "custom", "label": "choice.wavyCapes.preset.custom" }
+      ]
+    },
+    "wavyCapes.style": {
+      "label": "field.wavyCapes.style",
+      "kind": "choice",
+      "options": [
+        { "value": "smooth", "label": "choice.wavyCapes.style.smooth" },
+        { "value": "crisp", "label": "choice.wavyCapes.style.crisp" },
+        { "value": "blocky", "label": "choice.wavyCapes.style.blocky" },
+        { "value": "slim", "label": "choice.wavyCapes.style.slim" }
+      ]
+    },
+    "wavyCapes.quality": {
+      "label": "field.wavyCapes.quality",
+      "kind": "choice",
+      "options": [
+        { "value": "low", "label": "choice.wavyCapes.quality.low" },
+        { "value": "medium", "label": "choice.wavyCapes.quality.medium" },
+        { "value": "high", "label": "choice.wavyCapes.quality.high" }
+      ]
+    },
+    "wavyCapes.players": {
+      "label": "field.wavyCapes.players",
+      "kind": "choice",
+      "options": [
+        { "value": "all", "label": "choice.wavyCapes.players.all" },
+        { "value": "self", "label": "choice.wavyCapes.players.self" }
+      ]
+    },
+    "wavyCapes.gravity": {
+      "label": "field.wavyCapes.gravity",
+      "kind": "slider",
+      "range": [ 0.2, 2.5, 0.05 ]
+    },
+    "wavyCapes.stiffness": {
+      "label": "field.wavyCapes.stiffness",
+      "kind": "slider",
+      "range": [ 0.0, 1.0, 0.05 ]
+    },
+    "wavyCapes.damping": {
+      "label": "field.wavyCapes.damping",
+      "kind": "slider",
+      "range": [ 0.0, 1.0, 0.05 ]
+    },
+    "wavyCapes.drag": {
+      "label": "field.wavyCapes.drag",
+      "kind": "slider",
+      "range": [ 0.2, 2.5, 0.05 ]
+    },
+    "wavyCapes.turnSwing": {
+      "label": "field.wavyCapes.turnSwing",
+      "kind": "slider",
+      "range": [ 0.0, 2.5, 0.05 ]
+    },
+    "wavyCapes.wind": {
+      "label": "field.wavyCapes.wind",
+      "kind": "slider",
+      "range": [ 0.0, 2.5, 0.05 ]
+    },
+    "wavyCapes.flutter": {
+      "label": "field.wavyCapes.flutter",
+      "kind": "slider",
+      "range": [ 0.0, 2.0, 0.05 ]
+    },
+    "wavyCapes.weatherWind": {
+      "label": "field.wavyCapes.weatherWind",
+      "kind": "toggle"
+    },
+    "wavyCapes.waterPhysics": {
+      "label": "field.wavyCapes.waterPhysics",
+      "kind": "toggle"
+    },
+    "wavyCapes.thickness": {
+      "label": "field.wavyCapes.thickness",
+      "kind": "slider",
+      "range": [ 0.2, 1.8, 0.05 ]
+    },
+    "wavyCapes.widthScale": {
+      "label": "field.wavyCapes.widthScale",
+      "kind": "slider",
+      "range": [ 0.8, 1.35, 0.05 ]
+    },
+    "wavyCapes.lengthScale": {
+      "label": "field.wavyCapes.lengthScale",
+      "kind": "slider",
+      "range": [ 0.7, 1.35, 0.05 ]
+    },
+    "wavyCapes.hemFlare": {
+      "label": "field.wavyCapes.hemFlare",
+      "kind": "slider",
+      "range": [ 0.0, 1.0, 0.05 ]
+    },
+    "wavyCapes.foldShading": {
+      "label": "field.wavyCapes.foldShading",
+      "kind": "slider",
+      "range": [ 0.0, 1.0, 0.05 ]
+    },
+    "wavyCapes.bodyCollision": {
+      "label": "field.wavyCapes.bodyCollision",
+      "kind": "toggle"
+    },
+    "wavyCapes.maxDistance": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [ 16, 128, 8 ]
+    },
+    "explosionRing.showTnt": {
+      "label": "field.explosionRing.showTnt",
+      "kind": "toggle"
+    },
+    "explosionRing.showCrystals": {
+      "label": "field.explosionRing.showCrystals",
+      "kind": "toggle"
+    },
+    "explosionRing.showAnchors": {
+      "label": "field.explosionRing.showAnchors",
+      "kind": "toggle"
+    },
+    "explosionRing.showFill": {
+      "label": "field.explosionRing.showFill",
+      "kind": "toggle"
+    },
+    "explosionRing.fillOpacity": {
+      "label": "field.explosionRing.fillOpacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.45,
+        0.02
+      ],
+      "condition": "explosionRing.showFill"
+    },
+    "explosionRing.showFuseRing": {
+      "label": "field.explosionRing.showFuseRing",
+      "kind": "toggle"
+    },
+    "explosionRing.showLethalRing": {
+      "label": "field.explosionRing.showLethalRing",
+      "kind": "toggle"
+    },
+    "explosionRing.showDamageBadge": {
+      "label": "field.explosionRing.showDamageBadge",
+      "kind": "toggle"
+    },
+    "explosionRing.autoLearnRadius": {
+      "label": "field.explosionRing.autoLearnRadius",
+      "kind": "toggle"
+    },
+    "explosionRing.customTntRadius": {
+      "label": "field.explosionRing.customTntRadius",
+      "kind": "slider",
+      "range": [
+        0.0,
+        24.0,
+        0.5
+      ]
+    },
+    "explosionRing.damageMultiplier": {
+      "label": "field.explosionRing.damageMultiplier",
+      "kind": "slider",
+      "range": [
+        0.5,
+        4.0,
+        0.1
+      ]
+    },
+    "explosionRing.lineWidth": {
+      "label": "field.lineWidth",
+      "kind": "slider",
+      "range": [
+        0.8,
+        5.0,
+        0.2
+      ]
+    },
+    "explosionRing.maxDistance": {
+      "label": "field.range",
+      "kind": "slider",
+      "range": [
+        12.0,
+        96.0,
+        4.0
+      ]
+    },
+    "tooltips.style": {
+      "label": "field.tooltips.style",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "hw",
+          "label": "choice.tooltips.style.hw"
+        },
+        {
+          "value": "glass",
+          "label": "choice.tooltips.style.glass"
+        },
+        {
+          "value": "vanilla",
+          "label": "choice.tooltips.style.vanilla"
+        }
+      ]
+    },
+    "tooltips.shulkerPeek": {
+      "label": "field.tooltips.shulkerPeek",
+      "kind": "toggle"
+    },
+    "tooltips.peekMode": {
+      "label": "field.tooltips.peekMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "compact",
+          "label": "choice.tooltips.peekMode.compact"
+        },
+        {
+          "value": "full",
+          "label": "choice.tooltips.peekMode.full"
+        }
+      ],
+      "condition": "tooltips.shulkerPeek"
+    },
+    "tooltips.peekTrigger": {
+      "label": "field.tooltips.peekTrigger",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "always",
+          "label": "choice.tooltips.peekTrigger.always"
+        },
+        {
+          "value": "shift",
+          "label": "choice.tooltips.peekTrigger.shift"
+        }
+      ],
+      "condition": "tooltips.shulkerPeek"
+    },
+    "tooltips.colorByShulker": {
+      "label": "field.tooltips.colorByShulker",
+      "kind": "toggle",
+      "condition": "tooltips.shulkerPeek"
+    },
+    "tooltips.hideVanillaList": {
+      "label": "field.tooltips.hideVanillaList",
+      "kind": "toggle",
+      "condition": "tooltips.shulkerPeek"
+    },
+    "tooltips.hwTooltips": {
+      "label": "field.tooltips.hwTooltips",
+      "kind": "toggle"
+    },
+    "tooltips.hwAuctionPrice": {
+      "label": "field.tooltips.hwAuctionPrice",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwRarityBorder": {
+      "label": "field.tooltips.hwRarityBorder",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwGoldenSpawners": {
+      "label": "field.tooltips.hwGoldenSpawners",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwSpawnerHighlight": {
+      "label": "field.tooltips.hwSpawnerHighlight",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwSpecialCompass": {
+      "label": "field.tooltips.hwSpecialCompass",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwCoinExchange": {
+      "label": "field.tooltips.hwCoinExchange",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.hwKnockbackHighlight": {
+      "label": "field.tooltips.hwKnockbackHighlight",
+      "kind": "toggle",
+      "condition": "tooltips.hwTooltips"
+    },
+    "tooltips.showDurability": {
+      "label": "field.tooltips.showDurability",
+      "kind": "toggle"
+    },
+    "tooltips.showItemHeader": {
+      "label": "field.tooltips.showItemHeader",
+      "kind": "toggle"
+    },
+    "minimap.scale": {
+      "label": "field.scale",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "minimap.shape": {
+      "label": "field.minimap.shape",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "square",
+          "label": "choice.minimap.shape.square"
+        },
+        {
+          "value": "sharp",
+          "label": "choice.minimap.shape.sharp"
+        },
+        {
+          "value": "circle",
+          "label": "choice.minimap.shape.circle"
+        },
+        {
+          "value": "diamond",
+          "label": "choice.minimap.shape.diamond"
+        },
+        {
+          "value": "hexagon",
+          "label": "choice.minimap.shape.hexagon"
+        },
+        {
+          "value": "octagon",
+          "label": "choice.minimap.shape.octagon"
+        }
+      ]
+    },
+    "minimap.size": {
+      "label": "field.minimap.size",
+      "kind": "slider",
+      "range": [
+        72,
+        240,
+        4
+      ]
+    },
+    "minimap.zoom": {
+      "label": "field.minimap.zoom",
+      "kind": "slider",
+      "range": [
+        0.5,
+        4.0,
+        0.1
+      ]
+    },
+    "minimap.frameOpacity": {
+      "label": "field.minimap.frameOpacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ]
+    },
+    "minimap.lockNorth": {
+      "label": "field.minimap.lockNorth",
+      "kind": "toggle"
+    },
+    "minimap.terrainShading": {
+      "label": "field.minimap.terrainShading",
+      "kind": "toggle"
+    },
+    "minimap.reliefStyle": {
+      "label": "field.minimap.reliefStyle",
+      "kind": "choice",
+      "condition": "minimap.terrainShading",
+      "options": [
+        {
+          "value": "classic",
+          "label": "choice.minimap.reliefStyle.classic"
+        },
+        {
+          "value": "vivid",
+          "label": "choice.minimap.reliefStyle.vivid"
+        },
+        {
+          "value": "contour",
+          "label": "choice.minimap.reliefStyle.contour"
+        },
+        {
+          "value": "flat",
+          "label": "choice.minimap.reliefStyle.flat"
+        }
+      ]
+    },
+    "minimap.reliefStrength": {
+      "label": "field.minimap.reliefStrength",
+      "kind": "slider",
+      "condition": "minimap.terrainShading",
+      "range": [
+        0.5,
+        4.0,
+        0.05
+      ]
+    },
+    "minimap.arrowStyle": {
+      "label": "field.minimap.arrowStyle",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "classic",
+          "label": "choice.minimap.arrowStyle.classic"
+        },
+        {
+          "value": "modern",
+          "label": "choice.minimap.arrowStyle.modern"
+        },
+        {
+          "value": "pointer",
+          "label": "choice.minimap.arrowStyle.pointer"
+        },
+        {
+          "value": "head",
+          "label": "choice.minimap.arrowStyle.head"
+        },
+        {
+          "value": "dot",
+          "label": "choice.minimap.arrowStyle.dot"
+        }
+      ]
+    },
+    "minimap.arrowScale": {
+      "label": "field.minimap.arrowScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.8,
+        0.05
+      ]
+    },
+    "minimap.arrowColor": {
+      "label": "field.minimap.arrowColor",
+      "kind": "color"
+    },
+    "minimap.enlargeMode": {
+      "label": "field.minimap.enlargeMode",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "hold",
+          "label": "choice.minimap.enlargeMode.hold"
+        },
+        {
+          "value": "toggle",
+          "label": "choice.minimap.enlargeMode.toggle"
+        }
+      ]
+    },
+    "minimap.enlargeSize": {
+      "label": "field.minimap.enlargeSize",
+      "kind": "slider",
+      "range": [
+        160,
+        420,
+        8
+      ]
+    },
+    "minimap.enlargeZoom": {
+      "label": "field.minimap.enlargeZoom",
+      "kind": "slider",
+      "range": [
+        0.35,
+        1.5,
+        0.05
+      ]
+    },
+    "minimap.biomeColors": {
+      "label": "field.minimap.biomeColors",
+      "kind": "toggle"
+    },
+    "minimap.blockLight": {
+      "label": "field.minimap.blockLight",
+      "kind": "toggle"
+    },
+    "minimap.chunkGrid": {
+      "label": "field.minimap.chunkGrid",
+      "kind": "toggle"
+    },
+    "minimap.showCompass": {
+      "label": "field.minimap.showCompass",
+      "kind": "toggle"
+    },
+    "minimap.showCoords": {
+      "label": "field.minimap.showCoords",
+      "kind": "toggle"
+    },
+    "minimap.showWaypoints": {
+      "label": "field.minimap.showWaypoints",
+      "kind": "toggle"
+    },
+    "minimap.offscreenWaypoints": {
+      "label": "field.minimap.offscreenWaypoints",
+      "kind": "toggle",
+      "condition": "minimap.showWaypoints"
+    },
+    "minimap.showPlayers": {
+      "label": "field.minimap.showPlayers",
+      "kind": "toggle"
+    },
+    "minimap.showPlayerHeads": {
+      "label": "field.minimap.showPlayerHeads",
+      "kind": "toggle",
+      "condition": "minimap.showPlayers"
+    },
+    "minimap.showPlayerNames": {
+      "label": "field.minimap.showPlayerNames",
+      "kind": "toggle",
+      "condition": "minimap.showPlayers"
+    },
+    "minimap.showInvisiblePlayers": {
+      "label": "field.minimap.showInvisiblePlayers",
+      "kind": "toggle",
+      "condition": "minimap.showPlayers"
+    },
+    "minimap.playerScale": {
+      "label": "field.minimap.playerScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.8,
+        0.05
+      ],
+      "condition": "minimap.showPlayers"
+    },
+    "minimap.showItems": {
+      "label": "field.minimap.showItems",
+      "kind": "toggle"
+    },
+    "minimap.itemStyle": {
+      "label": "field.minimap.itemStyle",
+      "kind": "choice",
+      "condition": "minimap.showItems",
+      "options": [
+        {
+          "value": "icons",
+          "label": "choice.minimap.itemStyle.icons"
+        },
+        {
+          "value": "dots",
+          "label": "choice.minimap.itemStyle.dots"
+        }
+      ]
+    },
+    "minimap.itemBackground": {
+      "label": "field.minimap.itemBackground",
+      "kind": "toggle",
+      "condition": "minimap.showItems"
+    },
+    "minimap.onlyValuableItems": {
+      "label": "field.minimap.onlyValuableItems",
+      "kind": "toggle",
+      "condition": "minimap.showItems"
+    },
+    "minimap.itemScale": {
+      "label": "field.minimap.itemScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.6,
+        0.05
+      ],
+      "condition": "minimap.showItems"
+    },
+    "minimap.mobIconStyle": {
+      "label": "field.minimap.mobIconStyle",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "icons",
+          "label": "choice.minimap.mobIconStyle.icons"
+        },
+        {
+          "value": "dots",
+          "label": "choice.minimap.mobIconStyle.dots"
+        }
+      ]
+    },
+    "minimap.mobScale": {
+      "label": "field.minimap.mobScale",
+      "kind": "slider",
+      "range": [
+        0.6,
+        1.8,
+        0.05
+      ]
+    },
+    "minimap.showHostileMobs": {
+      "label": "field.minimap.showHostileMobs",
+      "kind": "toggle"
+    },
+    "minimap.showNeutralMobs": {
+      "label": "field.minimap.showNeutralMobs",
+      "kind": "toggle"
+    },
+    "minimap.showPassiveMobs": {
+      "label": "field.minimap.showPassiveMobs",
+      "kind": "toggle"
+    },
+    "minimap.showOtherEntities": {
+      "label": "field.minimap.showOtherEntities",
+      "kind": "toggle"
+    },
+    "minimap.showMobNames": {
+      "label": "field.minimap.showMobNames",
+      "kind": "toggle"
+    },
+    "minimap.showExplosives": {
+      "label": "field.minimap.showExplosives",
+      "kind": "toggle"
+    },
+    "worldMap.diskCache": {
+      "label": "field.worldMap.diskCache",
+      "kind": "toggle"
+    },
+    "worldMap.terrainShading": {
+      "label": "field.worldMap.terrainShading",
+      "kind": "toggle"
+    },
+    "worldMap.biomeColors": {
+      "label": "field.worldMap.biomeColors",
+      "kind": "toggle"
+    },
+    "worldMap.blockLight": {
+      "label": "field.worldMap.blockLight",
+      "kind": "toggle"
+    },
+    "worldMap.showGrid": {
+      "label": "field.worldMap.showGrid",
+      "kind": "toggle"
+    },
+    "worldMap.showWaypoints": {
+      "label": "field.worldMap.showWaypoints",
+      "kind": "toggle"
+    },
+    "worldMap.showPlayers": {
+      "label": "field.worldMap.showPlayers",
+      "kind": "toggle"
+    },
+    "worldMap.showInvisiblePlayers": {
+      "label": "field.worldMap.showInvisiblePlayers",
+      "kind": "toggle",
+      "condition": "worldMap.showPlayers"
+    },
+    "worldMap.showItems": {
+      "label": "field.worldMap.showItems",
+      "kind": "toggle"
+    },
+    "worldMap.showMobs": {
+      "label": "field.worldMap.showMobs",
+      "kind": "toggle"
+    },
+    "worldMap.showOtherEntities": {
+      "label": "field.worldMap.showOtherEntities",
+      "kind": "toggle"
+    },
+    "worldMap.showCoordinatesBar": {
+      "label": "field.worldMap.showCoordinatesBar",
+      "kind": "toggle"
+    },
+    "worldMap.teleportCommand": {
+      "label": "field.worldMap.teleportCommand",
+      "kind": "toggle"
+    },
+    "accountSwitcher.layout": {
+      "label": "field.accountSwitcher.layout",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "modern",
+          "label": "choice.accountSwitcher.layout.modern"
+        },
+        {
+          "value": "classic",
+          "label": "choice.accountSwitcher.layout.classic"
+        }
+      ]
+    },
+    "accountSwitcher.titleScreen": {
+      "label": "field.accountSwitcher.titleScreen",
+      "kind": "toggle"
+    },
+    "accountSwitcher.multiplayerScreen": {
+      "label": "field.accountSwitcher.multiplayerScreen",
+      "kind": "toggle"
+    },
+    "accountSwitcher.titlePosition": {
+      "label": "field.accountSwitcher.titlePosition",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "auto",
+          "label": "choice.accountSwitcher.pos.auto"
+        },
+        {
+          "value": "besideButtons",
+          "label": "choice.accountSwitcher.pos.besideButtons"
+        },
+        {
+          "value": "topRight",
+          "label": "choice.accountSwitcher.overlayPosition.topRight"
+        },
+        {
+          "value": "topLeft",
+          "label": "choice.accountSwitcher.overlayPosition.topLeft"
+        },
+        {
+          "value": "bottomLeft",
+          "label": "choice.accountSwitcher.overlayPosition.bottomLeft"
+        }
+      ]
+    },
+    "accountSwitcher.multiplayerPosition": {
+      "label": "field.accountSwitcher.multiplayerPosition",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "auto",
+          "label": "choice.accountSwitcher.pos.auto"
+        },
+        {
+          "value": "headerRight",
+          "label": "choice.accountSwitcher.pos.headerRight"
+        },
+        {
+          "value": "headerLeft",
+          "label": "choice.accountSwitcher.pos.headerLeft"
+        },
+        {
+          "value": "bottomLeft",
+          "label": "choice.accountSwitcher.overlayPosition.bottomLeft"
+        }
+      ]
+    },
+    "accountSwitcher.overlayPosition": {
+      "label": "field.accountSwitcher.overlayPosition",
+      "kind": "choice",
+      "options": [
+        {
+          "value": "topLeft",
+          "label": "choice.accountSwitcher.overlayPosition.topLeft"
+        },
+        {
+          "value": "topRight",
+          "label": "choice.accountSwitcher.overlayPosition.topRight"
+        },
+        {
+          "value": "bottomLeft",
+          "label": "choice.accountSwitcher.overlayPosition.bottomLeft"
+        }
+      ]
+    },
+    "accountSwitcher.closeOnSwitch": {
+      "label": "field.accountSwitcher.closeOnSwitch",
+      "kind": "toggle"
+    },
+    "accountSwitcher.hideAltsInProtect": {
+      "label": "field.accountSwitcher.hideAltsInProtect",
+      "kind": "toggle"
+    },
+    "safeCtLeave.dangerGuard": {
+      "label": "field.safeCtLeave.dangerGuard",
+      "kind": "toggle"
+    },
+    "safeCtLeave.dangerRadius": {
+      "label": "field.safeCtLeave.dangerRadius",
+      "kind": "slider",
+      "range": [
+        3.0,
+        16.0,
+        0.5
+      ],
+      "condition": "safeCtLeave.dangerGuard"
+    },
+    "hwhelper.events.enabled": {
+      "label": "field.hwhelper.events.enabled",
+      "kind": "toggle"
+    },
+    "hwhelper.events.showHud": {
+      "label": "field.hwhelper.events.showHud",
+      "kind": "toggle",
+      "condition": "hwhelper.events.enabled"
+    },
+    "hwhelper.events.soundAlert": {
+      "label": "field.hwhelper.events.soundAlert",
+      "kind": "toggle",
+      "condition": "hwhelper.events.enabled"
+    },
+    "hwhelper.events.pollIntervalSeconds": {
+      "label": "field.hwhelper.events.pollIntervalSeconds",
+      "kind": "slider",
+      "range": [
+        10,
+        60,
+        5
+      ],
+      "condition": "hwhelper.events.enabled"
+    },
+    "hwhelper.timers.enabled": {
+      "label": "field.hwhelper.timers.enabled",
+      "kind": "toggle"
+    },
+    "hwhelper.timers.traps": {
+      "label": "field.hwhelper.timers.traps",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.explosiveTraps": {
+      "label": "field.hwhelper.timers.explosiveTraps",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.stuns": {
+      "label": "field.hwhelper.timers.stuns",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.snowball": {
+      "label": "field.hwhelper.timers.snowball",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.farewell": {
+      "label": "field.hwhelper.timers.farewell",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.actionbarTimer": {
+      "label": "field.hwhelper.timers.actionbarTimer",
+      "kind": "toggle",
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.esp.enabled": {
+      "label": "field.hwhelper.esp.enabled",
+      "kind": "toggle"
+    },
+    "hwhelper.esp.stun": {
+      "label": "field.hwhelper.esp.stun",
+      "kind": "toggle",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.explosiveTrap": {
+      "label": "field.hwhelper.esp.explosiveTrap",
+      "kind": "toggle",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.trap": {
+      "label": "field.hwhelper.esp.trap",
+      "kind": "toggle",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.jakeLuminaire": {
+      "label": "field.hwhelper.esp.jakeLuminaire",
+      "kind": "toggle",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.drillHelper": {
+      "label": "field.hwhelper.esp.drillHelper",
+      "kind": "toggle",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.idleColor": {
+      "label": "field.hwhelper.esp.idleColor",
+      "kind": "color",
+      "format": "hex",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.enemyColor": {
+      "label": "field.hwhelper.esp.enemyColor",
+      "kind": "color",
+      "format": "hex",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.drillColor": {
+      "label": "field.hwhelper.esp.drillColor",
+      "kind": "color",
+      "format": "hex",
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.fillOpacity": {
+      "label": "field.hwhelper.esp.fillOpacity",
+      "kind": "slider",
+      "range": [
+        0.0,
+        0.45,
+        0.01
+      ],
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.esp.lineWidth": {
+      "label": "field.hwhelper.esp.lineWidth",
+      "kind": "slider",
+      "range": [
+        0.8,
+        5.0,
+        0.1
+      ],
+      "condition": "hwhelper.esp.enabled"
+    },
+    "hwhelper.compassWaypoint": {
+      "label": "field.hwhelper.compassWaypoint",
+      "kind": "toggle"
+    },
+    "hwhelper.timers.trapSeconds": {
+      "label": "field.hwhelper.timers.trapSeconds",
+      "kind": "slider",
+      "range": [
+        5.0,
+        30.0,
+        0.5
+      ],
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.stunSeconds": {
+      "label": "field.hwhelper.timers.stunSeconds",
+      "kind": "slider",
+      "range": [
+        5.0,
+        30.0,
+        0.5
+      ],
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.snowballSeconds": {
+      "label": "field.hwhelper.timers.snowballSeconds",
+      "kind": "slider",
+      "range": [
+        3.0,
+        20.0,
+        0.5
+      ],
+      "condition": "hwhelper.timers.enabled"
+    },
+    "hwhelper.timers.scale": {
+      "label": "field.hwhelper.timers.scale",
+      "kind": "slider",
+      "range": [
+        0.7,
+        1.6,
+        0.05
+      ],
+      "condition": "hwhelper.timers.enabled"
+    },
+    "soundControl.muteBlocks": {
+      "label": "field.soundControl.muteBlocks",
+      "kind": "toggle"
+    },
+    "soundControl.blockVolume": {
+      "label": "field.soundControl.blockVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.0,
+        0.05
+      ],
+      "condition": "soundControl.muteBlocks"
+    },
+    "soundControl.filterStep": {
+      "label": "field.soundControl.filterStep",
+      "kind": "toggle",
+      "condition": "soundControl.muteBlocks"
+    },
+    "soundControl.filterBreak": {
+      "label": "field.soundControl.filterBreak",
+      "kind": "toggle",
+      "condition": "soundControl.muteBlocks"
+    },
+    "soundControl.filterPlace": {
+      "label": "field.soundControl.filterPlace",
+      "kind": "toggle",
+      "condition": "soundControl.muteBlocks"
+    },
+    "soundControl.filterHit": {
+      "label": "field.soundControl.filterHit",
+      "kind": "toggle",
+      "condition": "soundControl.muteBlocks"
+    },
+    "soundControl.customTnt": {
+      "label": "field.soundControl.customTnt",
+      "kind": "toggle"
+    },
+    "soundControl.tntFusePreset": {
+      "label": "field.soundControl.tntFusePreset",
+      "kind": "choice",
+      "condition": "soundControl.customTnt",
+      "options": [
+        { "value": "vanilla", "label": "choice.soundPreset.vanilla" },
+        { "value": "note_pling", "label": "choice.soundPreset.note_pling" },
+        { "value": "amethyst", "label": "choice.soundPreset.amethyst" },
+        { "value": "anvil", "label": "choice.soundPreset.anvil" },
+        { "value": "bell", "label": "choice.soundPreset.bell" },
+        { "value": "warden_sonic", "label": "choice.soundPreset.warden_sonic" },
+        { "value": "mp3", "label": "choice.soundPreset.mp3" },
+        { "value": "custom", "label": "choice.soundPreset.custom" }
+      ]
+    },
+    "soundControl.tntExplodePreset": {
+      "label": "field.soundControl.tntExplodePreset",
+      "kind": "choice",
+      "condition": "soundControl.customTnt",
+      "options": [
+        { "value": "vanilla", "label": "choice.soundPreset.vanilla" },
+        { "value": "warden_sonic", "label": "choice.soundPreset.warden_sonic" },
+        { "value": "thunder", "label": "choice.soundPreset.thunder" },
+        { "value": "trident", "label": "choice.soundPreset.trident" },
+        { "value": "amethyst", "label": "choice.soundPreset.amethyst" },
+        { "value": "mute", "label": "choice.soundPreset.mute" },
+        { "value": "mp3", "label": "choice.soundPreset.mp3" },
+        { "value": "custom", "label": "choice.soundPreset.custom" }
+      ]
+    },
+    "soundControl.customTntSoundId": {
+      "label": "field.soundControl.customTntSoundId",
+      "kind": "input",
+      "condition": "soundControl.customTnt"
+    },
+    "soundControl.tntVolume": {
+      "label": "field.soundControl.tntVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        2.0,
+        0.05
+      ],
+      "condition": "soundControl.customTnt"
+    },
+    "soundControl.tntPitch": {
+      "label": "field.soundControl.tntPitch",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ],
+      "condition": "soundControl.customTnt"
+    },
+    "soundControl.tntCountdownTicks": {
+      "label": "field.soundControl.tntCountdownTicks",
+      "kind": "toggle",
+      "condition": "soundControl.customTnt"
+    },
+    "soundControl.chatMention": {
+      "label": "field.soundControl.chatMention",
+      "kind": "toggle"
+    },
+    "soundControl.mentionPreset": {
+      "label": "field.soundControl.mentionPreset",
+      "kind": "choice",
+      "condition": "soundControl.chatMention",
+      "options": [
+        { "value": "note_pling", "label": "choice.soundPreset.note_pling" },
+        { "value": "experience", "label": "choice.soundPreset.experience" },
+        { "value": "amethyst", "label": "choice.soundPreset.amethyst" },
+        { "value": "bell", "label": "choice.soundPreset.bell" },
+        { "value": "chime", "label": "choice.soundPreset.chime" },
+        { "value": "levelup", "label": "choice.soundPreset.levelup" }
+      ]
+    },
+    "soundControl.mentionVolume": {
+      "label": "field.soundControl.mentionVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        2.0,
+        0.05
+      ],
+      "condition": "soundControl.chatMention"
+    },
+    "soundControl.mentionPitch": {
+      "label": "field.soundControl.mentionPitch",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ],
+      "condition": "soundControl.chatMention"
+    },
+    "soundControl.mentionKeywords": {
+      "label": "field.soundControl.mentionKeywords",
+      "kind": "input",
+      "condition": "soundControl.chatMention"
+    },
+    "soundControl.mentionHighlight": {
+      "label": "field.soundControl.mentionHighlight",
+      "kind": "toggle",
+      "condition": "soundControl.chatMention"
+    },
+    "soundControl.explosionVolume": {
+      "label": "field.soundControl.explosionVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "soundControl.totemVolume": {
+      "label": "field.soundControl.totemVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "soundControl.weatherVolume": {
+      "label": "field.soundControl.weatherVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "soundControl.portalBeaconVolume": {
+      "label": "field.soundControl.portalBeaconVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        1.5,
+        0.05
+      ]
+    },
+    "effectAlert.mode": {
+      "label": "field.effectAlert.mode",
+      "kind": "choice",
+      "options": [
+        { "value": "both", "label": "choice.effectAlert.mode.both" },
+        { "value": "sound", "label": "choice.effectAlert.mode.sound" },
+        { "value": "hud", "label": "choice.effectAlert.mode.hud" }
+      ]
+    },
+    "effectAlert.warnSeconds": {
+      "label": "field.effectAlert.warnSeconds",
+      "kind": "slider",
+      "range": [
+        1,
+        30,
+        1
+      ]
+    },
+    "effectAlert.notifyOnExpire": {
+      "label": "field.effectAlert.notifyOnExpire",
+      "kind": "toggle"
+    },
+    "effectAlert.soundPreset": {
+      "label": "field.effectAlert.soundPreset",
+      "kind": "choice",
+      "options": [
+        { "value": "note_pling", "label": "choice.soundPreset.note_pling" },
+        { "value": "amethyst", "label": "choice.soundPreset.amethyst" },
+        { "value": "bell", "label": "choice.soundPreset.bell" },
+        { "value": "experience", "label": "choice.soundPreset.experience" },
+        { "value": "anvil", "label": "choice.soundPreset.anvil" },
+        { "value": "bass", "label": "choice.soundPreset.bass" }
+      ]
+    },
+    "effectAlert.soundVolume": {
+      "label": "field.effectAlert.soundVolume",
+      "kind": "slider",
+      "range": [
+        0.0,
+        2.0,
+        0.05
+      ]
+    },
+    "effectAlert.soundPitch": {
+      "label": "field.effectAlert.soundPitch",
+      "kind": "slider",
+      "range": [
+        0.5,
+        2.0,
+        0.05
+      ]
+    },
+    "effectAlert.scale": {
+      "label": "field.effectAlert.scale",
+      "kind": "slider",
+      "range": [
+        0.7,
+        1.6,
+        0.05
+      ]
+    },
+    "effectAlert.strength": {
+      "label": "field.effectAlert.strength",
+      "kind": "toggle"
+    },
+    "effectAlert.speed": {
+      "label": "field.effectAlert.speed",
+      "kind": "toggle"
+    },
+    "effectAlert.fireResistance": {
+      "label": "field.effectAlert.fireResistance",
+      "kind": "toggle"
+    },
+    "effectAlert.invisibility": {
+      "label": "field.effectAlert.invisibility",
+      "kind": "toggle"
+    },
+    "effectAlert.regeneration": {
+      "label": "field.effectAlert.regeneration",
+      "kind": "toggle"
+    },
+    "effectAlert.resistance": {
+      "label": "field.effectAlert.resistance",
+      "kind": "toggle"
+    },
+    "effectAlert.absorption": {
+      "label": "field.effectAlert.absorption",
+      "kind": "toggle"
+    },
+    "effectAlert.haste": {
+      "label": "field.effectAlert.haste",
+      "kind": "toggle"
+    },
+    "effectAlert.slowFalling": {
+      "label": "field.effectAlert.slowFalling",
+      "kind": "toggle"
+    },
+    "effectAlert.waterBreathing": {
+      "label": "field.effectAlert.waterBreathing",
+      "kind": "toggle"
+    },
+    "effectAlert.nightVision": {
+      "label": "field.effectAlert.nightVision",
+      "kind": "toggle"
+    },
+    "tapeMouse.action": {
+      "label": "field.tapeMouse.action",
+      "kind": "choice",
+      "options": [
+        { "value": "attack", "label": "choice.tapeMouse.action.attack" },
+        { "value": "use", "label": "choice.tapeMouse.action.use" },
+        { "value": "forward", "label": "choice.tapeMouse.action.forward" },
+        { "value": "jump", "label": "choice.tapeMouse.action.jump" },
+        { "value": "sneak", "label": "choice.tapeMouse.action.sneak" },
+        { "value": "sprint", "label": "choice.tapeMouse.action.sprint" },
+        { "value": "drop", "label": "choice.tapeMouse.action.drop" },
+        { "value": "custom", "label": "choice.tapeMouse.action.custom" }
+      ]
+    },
+    "tapeMouse.delayTicks": {
+      "label": "field.tapeMouse.delayTicks",
+      "kind": "slider",
+      "range": [
+        0,
+        200,
+        1
+      ]
+    },
+    "tapeMouse.jitterTicks": {
+      "label": "field.tapeMouse.jitterTicks",
+      "kind": "slider",
+      "range": [
+        0,
+        10,
+        1
+      ]
+    },
+    "tapeMouse.workInBackground": {
+      "label": "field.tapeMouse.workInBackground",
+      "kind": "toggle"
+    },
+    "tapeMouse.pauseInScreens": {
+      "label": "field.tapeMouse.pauseInScreens",
+      "kind": "toggle"
+    },
+    "tapeMouse.stopOnDamage": {
+      "label": "field.tapeMouse.stopOnDamage",
+      "kind": "toggle"
+    },
+    "tapeMouse.showHudIndicator": {
+      "label": "field.tapeMouse.showHudIndicator",
+      "kind": "toggle"
+    }
+  },
+  "groups": {
+    "saturation": [
+      "saturation.strength"
+    ],
+    "motionBlur": [
+      "motionBlur.strength",
+      "motionBlur.quality",
+      "motionBlur.blurSky"
+    ],
+    "tabAnimation": [
+      "tabAnimation.style",
+      "tabAnimation.durationMs"
+    ],
+    "protect": [
+      "protect.hideNickname",
+      "protect.maskPasswords",
+      "protect.replacement"
+    ],
+    "crosshair": [
+      "crosshair.colorMode",
+      "crosshair.pixelScale",
+      "crosshair.offsetX",
+      "crosshair.offsetY",
+      "crosshair.mirrorX",
+      "crosshair.mirrorY",
+      "crosshair.color",
+      "crosshair.opacity",
+      "crosshair.thirdPerson",
+      "crosshair.targetShapeEnabled",
+      "crosshair.targetShape",
+      "crosshair.targetScale",
+      "crosshair.targetSize",
+      "crosshair.targetGap",
+      "crosshair.targetThickness",
+      "crosshair.targetOutline",
+      "crosshair.targetCenterDot",
+      "crosshair.targetRotation",
+      "crosshair.targetHighlight",
+      "crosshair.targetColor",
+      "crosshair.targetAnimate",
+      "crosshair.targetAnimSpeed",
+      "crosshair.targetMobs",
+      "crosshair.targetHostileOnly",
+      "crosshair.targetRange"
+    ],
+    "zoom": [
+      "zoom.factor",
+      "zoom.smooth",
+      "zoom.scroll"
+    ],
+    "viewmodel": [
+      "viewmodel.main.enabled",
+      "viewmodel.main.x",
+      "viewmodel.main.y",
+      "viewmodel.main.z",
+      "viewmodel.main.rotateX",
+      "viewmodel.main.rotateY",
+      "viewmodel.main.rotateZ",
+      "viewmodel.main.scaleX",
+      "viewmodel.main.scaleY",
+      "viewmodel.main.scaleZ",
+      "viewmodel.off.enabled",
+      "viewmodel.off.x",
+      "viewmodel.off.y",
+      "viewmodel.off.z",
+      "viewmodel.off.rotateX",
+      "viewmodel.off.rotateY",
+      "viewmodel.off.rotateZ",
+      "viewmodel.off.scaleX",
+      "viewmodel.off.scaleY",
+      "viewmodel.off.scaleZ",
+      "viewmodel.snap",
+      "viewmodel.translationSnap",
+      "viewmodel.rotationSnap",
+      "viewmodel.scaleSnap"
+    ],
+    "optimization": [
+      "optimization.profile",
+      "optimization.autoCompatibility",
+      "optimization.undergroundCaveCulling",
+      "optimization.retainedTerrainCache",
+      "optimization.leafCulling",
+      "optimization.fastModelRendering",
+      "optimization.nativeGpuInstancing",
+      "optimization.nativePboUploads",
+      "optimization.nativePacketCodec",
+      "optimization.occlusionCulling",
+      "optimization.staticBlockEntityBatching",
+      "optimization.staticEntityBatching",
+      "optimization.hologramTextCache",
+      "optimization.emptyBlockEntitySkip",
+      "optimization.signTextCulling",
+      "optimization.signTextDistance",
+      "optimization.itemClustering",
+      "optimization.itemClusterLimit",
+      "optimization.nametagCulling",
+      "optimization.nametagDistance",
+      "optimization.entityCulling",
+      "optimization.entityDistance",
+      "optimization.blockEntityCulling",
+      "optimization.blockEntityDistance",
+      "optimization.particleCulling",
+      "optimization.particleDistance",
+      "optimization.particleLimit",
+      "optimization.fastParticlePhysics",
+      "optimization.hudCache",
+      "optimization.vanillaHudCache",
+      "optimization.scoreboardCache"
+    ],
+    "tweaksy": [
+      "tweaksy.mainLeftFix.enabled",
+      "tweaksy.commandFix.enabled",
+      "tweaksy.cursorFix.enabled",
+      "tweaksy.ownNametag.enabled",
+      "tweaksy.invisibleArmorNametag.enabled",
+      "tweaksy.invisibleArmorNametag.hitbox",
+      "tweaksy.fullBright.enabled",
+      "tweaksy.fullBright.strength"
+    ],
+    "itemScroller": [
+      "itemScroller.dragMatching",
+      "itemScroller.dragOnlyMatching",
+      "itemScroller.dragCooldownMs",
+      "itemScroller.moveMatching",
+      "itemScroller.dropMatching",
+      "itemScroller.shiftPlace",
+      "itemScroller.wheel",
+      "itemScroller.wheelMode",
+      "itemScroller.wheelDirection",
+      "itemScroller.cooldownMs",
+      "itemScroller.matchNbt"
+    ],
+    "hitColor": [
+      "hitColor.mode",
+      "hitColor.armor",
+      "hitColor.color",
+      "hitColor.opacity"
+    ],
+    "hitbox": [
+      "hitbox.players",
+      "hitbox.mobs",
+      "hitbox.items",
+      "hitbox.eyeLine",
+      "hitbox.color",
+      "hitbox.lineWidth",
+      "hitbox.range"
+    ],
+    "aspectRatio": [
+      "aspectRatio.preset",
+      "aspectRatio.ratio"
+    ],
+    "damageSplash": [
+      "damageSplash.crits",
+      "damageSplash.scale",
+      "damageSplash.duration",
+      "damageSplash.colorMode",
+      "damageSplash.color",
+      "damageSplash.critColor"
+    ],
+    "playerHealth": [
+      "playerHealth.style",
+      "playerHealth.height",
+      "playerHealth.scale",
+      "playerHealth.showInvisible",
+      "playerHealth.showAbsorption",
+      "playerHealth.showEnchanted",
+      "playerHealth.maxDistance"
+    ],
+    "totemCounter": [
+      "totemCounter.height",
+      "totemCounter.scale",
+      "totemCounter.showZero",
+      "totemCounter.showInvisible",
+      "totemCounter.resetOnDeath",
+      "totemCounter.maxDistance"
+    ],
+    "playerPing": [
+      "playerPing.inWorld",
+      "playerPing.inTab",
+      "playerPing.tabKeepBars",
+      "playerPing.colored",
+      "playerPing.style",
+      "playerPing.showSelf",
+      "playerPing.showInvisible",
+      "playerPing.height",
+      "playerPing.scale",
+      "playerPing.maxDistance"
+    ],
+    "safeCtLeave": [
+      "safeCtLeave.blockDisconnect",
+      "safeCtLeave.confirmDisconnect",
+      "safeCtLeave.blockWindowClose",
+      "safeCtLeave.blockCommands",
+      "safeCtLeave.shiftBypass",
+      "safeCtLeave.detectPvpHits",
+      "safeCtLeave.dangerGuard",
+      "safeCtLeave.dangerRadius",
+      "safeCtLeave.fallbackSeconds",
+      "safeCtLeave.showBanner"
+    ],
+    "betterChat": [
+      "betterChat.backgroundStyle",
+      "betterChat.backgroundOpacity",
+      "betterChat.blur",
+      "betterChat.animation",
+      "betterChat.animationSpeed",
+      "betterChat.stackDuplicates",
+      "betterChat.timestamps",
+      "betterChat.timestampSeconds",
+      "betterChat.keepHistory",
+      "betterChat.historyLimit",
+      "betterChat.copyOnClick",
+      "betterChat.keepDraft",
+      "betterChat.hideSignatureBar"
+    ],
+    "customSky": [
+      "customSky.style",
+      "customSky.timeMode",
+      "customSky.customTime",
+      "customSky.useCustomColors",
+      "customSky.topColor",
+      "customSky.horizonColor",
+      "customSky.accentColor",
+      "customSky.brightness",
+      "customSky.rotationSpeed",
+      "customSky.stars",
+      "customSky.clouds",
+      "customSky.celestial",
+      "customSky.celestialSize",
+      "customSky.celestialHeight",
+      "customSky.horizonGlow",
+      "customSky.endAndNether"
+    ],
+    "blockOverlay": [
+      "blockOverlay.mode",
+      "blockOverlay.useThemeAccent",
+      "blockOverlay.color",
+      "blockOverlay.outlineOpacity",
+      "blockOverlay.fillOpacity",
+      "blockOverlay.lineWidth",
+      "blockOverlay.smooth",
+      "blockOverlay.smoothSpeed",
+      "blockOverlay.exactShape",
+      "blockOverlay.pulse"
+    ],
+    "enchantGlint": [
+      "enchantGlint.colorMode",
+      "enchantGlint.preset",
+      "enchantGlint.color",
+      "enchantGlint.intensity",
+      "enchantGlint.speed"
+    ],
+    "wavyCapes": [
+      "wavyCapes.preset",
+      "wavyCapes.style",
+      "wavyCapes.quality",
+      "wavyCapes.players",
+      "wavyCapes.gravity",
+      "wavyCapes.stiffness",
+      "wavyCapes.damping",
+      "wavyCapes.drag",
+      "wavyCapes.turnSwing",
+      "wavyCapes.wind",
+      "wavyCapes.flutter",
+      "wavyCapes.weatherWind",
+      "wavyCapes.waterPhysics",
+      "wavyCapes.thickness",
+      "wavyCapes.widthScale",
+      "wavyCapes.lengthScale",
+      "wavyCapes.hemFlare",
+      "wavyCapes.foldShading",
+      "wavyCapes.bodyCollision",
+      "wavyCapes.maxDistance"
+    ],
+    "explosionRing": [
+      "explosionRing.showTnt",
+      "explosionRing.showCrystals",
+      "explosionRing.showAnchors",
+      "explosionRing.showFill",
+      "explosionRing.fillOpacity",
+      "explosionRing.showFuseRing",
+      "explosionRing.showLethalRing",
+      "explosionRing.showDamageBadge",
+      "explosionRing.autoLearnRadius",
+      "explosionRing.customTntRadius",
+      "explosionRing.damageMultiplier",
+      "explosionRing.lineWidth",
+      "explosionRing.maxDistance"
+    ],
+    "tooltips": [
+      "tooltips.style",
+      "tooltips.shulkerPeek",
+      "tooltips.peekMode",
+      "tooltips.peekTrigger",
+      "tooltips.colorByShulker",
+      "tooltips.hideVanillaList",
+      "tooltips.hwTooltips",
+      "tooltips.hwAuctionPrice",
+      "tooltips.hwRarityBorder",
+      "tooltips.hwGoldenSpawners",
+      "tooltips.hwSpawnerHighlight",
+      "tooltips.hwSpecialCompass",
+      "tooltips.hwCoinExchange",
+      "tooltips.hwKnockbackHighlight",
+      "tooltips.showDurability",
+      "tooltips.showItemHeader"
+    ],
+    "swing": [
+      "swing.style",
+      "swing.speed",
+      "swing.amplitude",
+      "swing.rotateX",
+      "swing.rotateY",
+      "swing.rotateZ",
+      "swing.equip"
+    ],
+    "itemPhysics": [
+      "itemPhysics.rotationSpeed",
+      "itemPhysics.grounded"
+    ],
+    "freelook": [
+      "freelook.smoothReturn",
+      "freelook.returnSpeed",
+      "freelook.sensitivity"
+    ],
+    "noRender": [
+      "noRender.fire",
+      "noRender.hideFire",
+      "noRender.fireOffset",
+      "noRender.hurtCam",
+      "noRender.totem",
+      "noRender.pumpkin",
+      "noRender.powderSnow",
+      "noRender.blockOverlay",
+      "noRender.portal",
+      "noRender.nausea",
+      "noRender.vignette",
+      "noRender.bossBar",
+      "noRender.waterOverlay",
+      "noRender.waterFog",
+      "noRender.lavaFog",
+      "noRender.weather"
+    ],
+    "lowFire": [
+      "lowFire.hidden",
+      "lowFire.offsetY"
+    ],
+    "hud": [
+      "hud.opacity",
+      "hud.scale",
+      "hud.offsetX",
+      "hud.offsetY",
+      "hud.width",
+      "hud.spacing",
+      "hud.maxVisible",
+      "hud.icons",
+      "hud.names",
+      "hud.time",
+      "hud.progress",
+      "hud.background",
+      "hud.hideWhenEmpty",
+      "hud.hideWithGameHud",
+      "hud.horizontal",
+      "hud.snap",
+      "hud.sort",
+      "hud.fontScale",
+      "hud.rowHeight",
+      "hud.iconScale",
+      "hud.progressHeight",
+      "hud.showHeader"
+    ],
+    "tnt": [
+      "tnt.range",
+      "tnt.showDistance",
+      "tnt.scale",
+      "tnt.opacity",
+      "tnt.offsetX",
+      "tnt.offsetY",
+      "tnt.width",
+      "tnt.height"
+    ],
+    "inventory": [
+      "inventory.hotbar",
+      "inventory.rows",
+      "inventory.counts",
+      "inventory.durability",
+      "inventory.scale",
+      "inventory.opacity",
+      "inventory.offsetX",
+      "inventory.offsetY",
+      "inventory.width",
+      "inventory.height"
+    ],
+    "armor": [
+      "armor.style",
+      "armor.horizontal",
+      "armor.durability",
+      "armor.durabilityStyle",
+      "armor.durabilityPosition",
+      "armor.percent",
+      "armor.names",
+      "armor.scale",
+      "armor.opacity",
+      "armor.offsetX",
+      "armor.offsetY"
+    ],
+    "potions": [
+      "potions.format",
+      "potions.horizontal",
+      "potions.time",
+      "potions.level",
+      "potions.icons",
+      "potions.hideWhenEmpty",
+      "potions.scale",
+      "potions.opacity",
+      "potions.offsetX",
+      "potions.offsetY",
+      "potions.width"
+    ],
+    "food": [],
+    "target": [
+      "target.style",
+      "target.displaySeconds",
+      "target.absorption",
+      "target.distance",
+      "target.scale",
+      "target.opacity",
+      "target.offsetX",
+      "target.offsetY",
+      "target.width",
+      "target.height"
+    ],
+    "scoreboard": [
+      "scoreboard.font",
+      "scoreboard.hideScores",
+      "scoreboard.cleanAds",
+      "scoreboard.background",
+      "scoreboard.opacity",
+      "scoreboard.scale"
+    ],
+    "keystrokes": [
+      "keystrokes.mouseButtons",
+      "keystrokes.space",
+      "keystrokes.cps",
+      "keystrokes.opacity",
+      "keystrokes.scale"
+    ],
+    "coordinates": [
+      "coordinates.opacity",
+      "coordinates.scale"
+    ],
+    "ping": [
+      "ping.colored",
+      "ping.opacity",
+      "ping.scale"
+    ],
+    "fps": [
+      "fps.colored",
+      "fps.background",
+      "fps.opacity",
+      "fps.scale"
+    ],
+    "menu": [
+      "menu.scale",
+      "menu.hudScale",
+      "menu.fontScale",
+      "menu.animationSpeed",
+      "menu.chatHudEditor"
+    ],
+    "theme": [
+      "theme.mode",
+      "theme.customBackground",
+      "theme.customSurface",
+      "theme.customRaised",
+      "theme.customText",
+      "theme.customAccent",
+      "theme.backgroundOpacity",
+      "theme.effects.backgroundBlur",
+      "theme.blurRadius",
+      "theme.blurQuality",
+      "theme.blurMix"
+    ],
+    "waypoints": [
+      "waypoints.badge",
+      "waypoints.chatCoordinates",
+      "waypoints.hideNearby",
+      "waypoints.hideNearbyRadius"
+    ],
+    "hwhelper": [
+      "hwhelper.esp.enabled",
+      "hwhelper.esp.stun",
+      "hwhelper.esp.explosiveTrap",
+      "hwhelper.esp.trap",
+      "hwhelper.esp.jakeLuminaire",
+      "hwhelper.esp.drillHelper",
+      "hwhelper.esp.idleColor",
+      "hwhelper.esp.enemyColor",
+      "hwhelper.esp.drillColor",
+      "hwhelper.esp.fillOpacity",
+      "hwhelper.esp.lineWidth",
+      "hwhelper.compassWaypoint",
+      "hwhelper.aucprice.enabled",
+      "hwhelper.answap.enabled",
+      "hwhelper.betterSell.enabled",
+      "hwhelper.events.enabled",
+      "hwhelper.events.showHud",
+      "hwhelper.events.soundAlert",
+      "hwhelper.events.pollIntervalSeconds",
+      "hwhelper.timers.enabled",
+      "hwhelper.timers.actionbarTimer",
+      "hwhelper.timers.traps",
+      "hwhelper.timers.explosiveTraps",
+      "hwhelper.timers.stuns",
+      "hwhelper.timers.snowball",
+      "hwhelper.timers.farewell",
+      "hwhelper.timers.trapSeconds",
+      "hwhelper.timers.stunSeconds",
+      "hwhelper.timers.snowballSeconds",
+      "hwhelper.timers.scale"
+    ],
+    "soundControl": [
+      "soundControl.muteBlocks",
+      "soundControl.blockVolume",
+      "soundControl.filterStep",
+      "soundControl.filterBreak",
+      "soundControl.filterPlace",
+      "soundControl.filterHit",
+      "soundControl.customTnt",
+      "soundControl.tntFusePreset",
+      "soundControl.tntExplodePreset",
+      "soundControl.customTntSoundId",
+      "soundControl.tntVolume",
+      "soundControl.tntPitch",
+      "soundControl.tntCountdownTicks",
+      "soundControl.chatMention",
+      "soundControl.mentionPreset",
+      "soundControl.mentionVolume",
+      "soundControl.mentionPitch",
+      "soundControl.mentionKeywords",
+      "soundControl.mentionHighlight",
+      "soundControl.explosionVolume",
+      "soundControl.totemVolume",
+      "soundControl.weatherVolume",
+      "soundControl.portalBeaconVolume"
+    ],
+    "effectAlert": [
+      "effectAlert.mode",
+      "effectAlert.warnSeconds",
+      "effectAlert.notifyOnExpire",
+      "effectAlert.soundPreset",
+      "effectAlert.soundVolume",
+      "effectAlert.soundPitch",
+      "effectAlert.scale",
+      "effectAlert.strength",
+      "effectAlert.speed",
+      "effectAlert.fireResistance",
+      "effectAlert.invisibility",
+      "effectAlert.regeneration",
+      "effectAlert.resistance",
+      "effectAlert.absorption",
+      "effectAlert.haste",
+      "effectAlert.slowFalling",
+      "effectAlert.waterBreathing",
+      "effectAlert.nightVision"
+    ],
+    "tapeMouse": [
+      "tapeMouse.action",
+      "tapeMouse.delayTicks",
+      "tapeMouse.jitterTicks",
+      "tapeMouse.workInBackground",
+      "tapeMouse.pauseInScreens",
+      "tapeMouse.stopOnDamage",
+      "tapeMouse.showHudIndicator"
+    ],
+    "atmosphere": [
+      "atmosphere.mode",
+      "atmosphere.density",
+      "atmosphere.scatterHeight",
+      "atmosphere.godRays",
+      "atmosphere.softness",
+      "atmosphere.dawnColor",
+      "atmosphere.amount",
+      "atmosphere.ground",
+      "atmosphere.speed",
+      "atmosphere.haze",
+      "atmosphere.grade",
+      "atmosphere.vignette",
+      "atmosphere.quality",
+      "atmosphere.snowCover.frost",
+      "atmosphere.snowCover.shelter",
+      "atmosphere.snowCover.coldShadows",
+      "atmosphere.snowCover.drifts",
+      "atmosphere.snowCover.thickness",
+      "atmosphere.snowCover.texture",
+      "atmosphere.snowCover.sparkle",
+      "atmosphere.snowCover.leaves",
+      "atmosphere.snowCover.ice",
+      "atmosphere.snowCover.cloudShadows",
+      "atmosphere.snowCover.daytime",
+      "atmosphere.snowfall.flakeSize",
+      "atmosphere.snowfall.clumps",
+      "atmosphere.snowfall.wind",
+      "atmosphere.snowfall.spindrift",
+      "atmosphere.snowfall.farSnow",
+      "atmosphere.sakura.blossom",
+      "atmosphere.sakura.blossomColor",
+      "atmosphere.sakura.wholeFlowers",
+      "atmosphere.sakura.gusts",
+      "atmosphere.sakura.nearTrees",
+      "atmosphere.sakura.hotaru",
+      "atmosphere.sakuraWater.petals",
+      "atmosphere.sakuraWater.moonPath",
+      "atmosphere.sakuraWater.reflections",
+      "atmosphere.sakuraWater.mist",
+      "atmosphere.sakuraSky.volcano",
+      "atmosphere.sakuraSky.pagoda",
+      "atmosphere.sakuraSky.clouds",
+      "atmosphere.sakuraSky.stars",
+      "atmosphere.autumnTrees.treeColors",
+      "atmosphere.autumnTrees.evergreen",
+      "atmosphere.autumnTrees.bareTrees",
+      "atmosphere.autumnGround.piles",
+      "atmosphere.autumnGround.dryGrass",
+      "atmosphere.autumnGround.puddles",
+      "atmosphere.autumnGround.dew",
+      "atmosphere.autumnAir.leafShapes",
+      "atmosphere.autumnAir.leafGlow",
+      "atmosphere.autumnAir.whirls",
+      "atmosphere.autumnAir.skitter",
+      "atmosphere.autumnAir.gossamer",
+      "atmosphere.autumnSky.clouds",
+      "atmosphere.autumnSky.birds",
+      "atmosphere.autumnSky.farForest",
+      "atmosphere.autumnSky.mist",
+      "atmosphere.autumnSky.sunHeight",
+      "atmosphere.autumnSky.sunRays",
+      "atmosphere.mysticSky.moon",
+      "atmosphere.mysticSky.moonColor",
+      "atmosphere.mysticSky.moonSize",
+      "atmosphere.mysticSky.moonHeight",
+      "atmosphere.mysticSky.halo",
+      "atmosphere.mysticSky.moonRays",
+      "atmosphere.mysticSky.stars",
+      "atmosphere.mysticSky.meteors",
+      "atmosphere.mysticSky.clouds",
+      "atmosphere.mysticSky.cloudShadows",
+      "atmosphere.mysticSky.lightning",
+      "atmosphere.mysticSky.silhouettes",
+      "atmosphere.mysticFog.groundFog",
+      "atmosphere.mysticFog.fogHeight",
+      "atmosphere.mysticFog.fogTendrils",
+      "atmosphere.mysticFog.fogColor",
+      "atmosphere.mysticWorld.alwaysNight",
+      "atmosphere.mysticWorld.moonlight",
+      "atmosphere.mysticWorld.coldShadows",
+      "atmosphere.mysticWorld.blueNight",
+      "atmosphere.mysticWorld.wither",
+      "atmosphere.mysticWorld.wetness",
+      "atmosphere.mysticWorld.puddles",
+      "atmosphere.mysticWorld.reflections",
+      "atmosphere.mysticLens.bokeh",
+      "atmosphere.mysticLens.grain",
+      "atmosphere.mysticLife.bats",
+      "atmosphere.mysticLife.batColony",
+      "atmosphere.mysticLife.wisps",
+      "atmosphere.mysticLife.wispsColor",
+      "atmosphere.mysticLife.wispCount",
+      "atmosphere.mysticLife.webs",
+      "atmosphere.mysticLife.ghosts",
+      "atmosphere.mysticWind.gusts",
+      "atmosphere.mysticWind.skitter",
+      "atmosphere.mysticWind.leafSize"
+    ],
+    "minimap": [
+      "minimap.shape",
+      "minimap.size",
+      "minimap.zoom",
+      "minimap.frameOpacity",
+      "minimap.lockNorth",
+      "minimap.arrowStyle",
+      "minimap.arrowScale",
+      "minimap.arrowColor",
+      "minimap.enlargeMode",
+      "minimap.enlargeSize",
+      "minimap.enlargeZoom",
+      "minimap.terrainShading",
+      "minimap.reliefStyle",
+      "minimap.reliefStrength",
+      "minimap.biomeColors",
+      "minimap.blockLight",
+      "minimap.chunkGrid",
+      "minimap.showCompass",
+      "minimap.showCoords",
+      "minimap.showWaypoints",
+      "minimap.offscreenWaypoints",
+      "minimap.showPlayers",
+      "minimap.showPlayerHeads",
+      "minimap.showPlayerNames",
+      "minimap.showInvisiblePlayers",
+      "minimap.playerScale",
+      "minimap.showItems",
+      "minimap.itemStyle",
+      "minimap.itemBackground",
+      "minimap.onlyValuableItems",
+      "minimap.itemScale",
+      "minimap.mobIconStyle",
+      "minimap.mobScale",
+      "minimap.showHostileMobs",
+      "minimap.showNeutralMobs",
+      "minimap.showPassiveMobs",
+      "minimap.showOtherEntities",
+      "minimap.showMobNames",
+      "minimap.showExplosives"
+    ],
+    "worldMap": [
+      "worldMap.diskCache",
+      "worldMap.terrainShading",
+      "worldMap.biomeColors",
+      "worldMap.blockLight",
+      "worldMap.showGrid",
+      "worldMap.showCoordinatesBar",
+      "worldMap.showWaypoints",
+      "worldMap.showPlayers",
+      "worldMap.showInvisiblePlayers",
+      "worldMap.showItems",
+      "worldMap.showMobs",
+      "worldMap.showOtherEntities",
+      "worldMap.teleportCommand"
+    ],
+    "accountSwitcher": [
+      "accountSwitcher.layout",
+      "accountSwitcher.titleScreen",
+      "accountSwitcher.titlePosition",
+      "accountSwitcher.multiplayerScreen",
+      "accountSwitcher.multiplayerPosition",
+      "accountSwitcher.closeOnSwitch",
+      "accountSwitcher.hideAltsInProtect"
+    ]
+  },
+  "editorGroups": {
+    "saturation": [
+      "saturation.strength"
+    ],
+    "motionBlur": [
+      "motionBlur.strength",
+      "motionBlur.quality",
+      "motionBlur.blurSky"
+    ],
+    "tabAnimation": [
+      "tabAnimation.style",
+      "tabAnimation.durationMs"
+    ],
+    "protect": [
+      "protect.hideNickname",
+      "protect.maskPasswords",
+      "protect.replacement"
+    ],
+    "crosshair": [
+      "crosshair.colorMode",
+      "crosshair.pixelScale",
+      "crosshair.mirrorX",
+      "crosshair.mirrorY",
+      "crosshair.color",
+      "crosshair.thirdPerson",
+      "crosshair.targetHighlight",
+      "crosshair.targetColor",
+      "crosshair.targetMobs"
+    ],
+    "zoom": [
+      "zoom.factor",
+      "zoom.smooth",
+      "zoom.scroll"
+    ],
+    "viewmodel": [
+      "viewmodel.main.enabled",
+      "viewmodel.main.x",
+      "viewmodel.main.y",
+      "viewmodel.main.z",
+      "viewmodel.main.rotateX",
+      "viewmodel.main.rotateY",
+      "viewmodel.main.rotateZ",
+      "viewmodel.main.scaleX",
+      "viewmodel.main.scaleY",
+      "viewmodel.main.scaleZ",
+      "viewmodel.off.enabled",
+      "viewmodel.off.x",
+      "viewmodel.off.y",
+      "viewmodel.off.z",
+      "viewmodel.off.rotateX",
+      "viewmodel.off.rotateY",
+      "viewmodel.off.rotateZ",
+      "viewmodel.off.scaleX",
+      "viewmodel.off.scaleY",
+      "viewmodel.off.scaleZ",
+      "viewmodel.translationSnap",
+      "viewmodel.rotationSnap",
+      "viewmodel.scaleSnap"
+    ],
+    "itemScroller": [
+      "itemScroller.dragMatching",
+      "itemScroller.dragOnlyMatching",
+      "itemScroller.dragCooldownMs",
+      "itemScroller.moveMatching",
+      "itemScroller.dropMatching",
+      "itemScroller.shiftPlace",
+      "itemScroller.wheel",
+      "itemScroller.wheelMode",
+      "itemScroller.wheelDirection",
+      "itemScroller.cooldownMs",
+      "itemScroller.matchNbt"
+    ],
+    "hitColor": [
+      "hitColor.mode",
+      "hitColor.armor",
+      "hitColor.color"
+    ],
+    "hitbox": [
+      "hitbox.players",
+      "hitbox.mobs",
+      "hitbox.items",
+      "hitbox.eyeLine",
+      "hitbox.color",
+      "hitbox.lineWidth",
+      "hitbox.range"
+    ],
+    "aspectRatio": [
+      "aspectRatio.preset",
+      "aspectRatio.ratio"
+    ],
+    "damageSplash": [
+      "damageSplash.crits",
+      "damageSplash.scale",
+      "damageSplash.duration",
+      "damageSplash.colorMode",
+      "damageSplash.color",
+      "damageSplash.critColor"
+    ],
+    "playerHealth": [
+      "playerHealth.style",
+      "playerHealth.height",
+      "playerHealth.scale",
+      "playerHealth.showInvisible",
+      "playerHealth.showAbsorption",
+      "playerHealth.showEnchanted",
+      "playerHealth.maxDistance"
+    ],
+    "totemCounter": [
+      "totemCounter.height",
+      "totemCounter.scale",
+      "totemCounter.showZero",
+      "totemCounter.showInvisible",
+      "totemCounter.resetOnDeath",
+      "totemCounter.maxDistance"
+    ],
+    "playerPing": [
+      "playerPing.inWorld",
+      "playerPing.inTab",
+      "playerPing.tabKeepBars",
+      "playerPing.colored",
+      "playerPing.style",
+      "playerPing.showSelf",
+      "playerPing.showInvisible",
+      "playerPing.height",
+      "playerPing.scale",
+      "playerPing.maxDistance"
+    ],
+    "safeCtLeave": [
+      "safeCtLeave.blockDisconnect",
+      "safeCtLeave.confirmDisconnect",
+      "safeCtLeave.blockWindowClose",
+      "safeCtLeave.blockCommands",
+      "safeCtLeave.shiftBypass",
+      "safeCtLeave.detectPvpHits",
+      "safeCtLeave.dangerGuard",
+      "safeCtLeave.dangerRadius",
+      "safeCtLeave.fallbackSeconds",
+      "safeCtLeave.showBanner"
+    ],
+    "betterChat": [
+      "betterChat.backgroundStyle",
+      "betterChat.backgroundOpacity",
+      "betterChat.blur",
+      "betterChat.animation",
+      "betterChat.animationSpeed",
+      "betterChat.stackDuplicates",
+      "betterChat.timestamps",
+      "betterChat.timestampSeconds",
+      "betterChat.keepHistory",
+      "betterChat.historyLimit",
+      "betterChat.copyOnClick",
+      "betterChat.keepDraft",
+      "betterChat.hideSignatureBar"
+    ],
+    "customSky": [
+      "customSky.style",
+      "customSky.timeMode",
+      "customSky.customTime",
+      "customSky.useCustomColors",
+      "customSky.topColor",
+      "customSky.horizonColor",
+      "customSky.accentColor",
+      "customSky.brightness",
+      "customSky.rotationSpeed",
+      "customSky.stars",
+      "customSky.clouds",
+      "customSky.celestial",
+      "customSky.celestialSize",
+      "customSky.celestialHeight",
+      "customSky.horizonGlow",
+      "customSky.endAndNether"
+    ],
+    "blockOverlay": [
+      "blockOverlay.mode",
+      "blockOverlay.useThemeAccent",
+      "blockOverlay.color",
+      "blockOverlay.outlineOpacity",
+      "blockOverlay.fillOpacity",
+      "blockOverlay.lineWidth",
+      "blockOverlay.smooth",
+      "blockOverlay.smoothSpeed",
+      "blockOverlay.exactShape",
+      "blockOverlay.pulse"
+    ],
+    "enchantGlint": [
+      "enchantGlint.colorMode",
+      "enchantGlint.preset",
+      "enchantGlint.color",
+      "enchantGlint.intensity",
+      "enchantGlint.speed"
+    ],
+    "wavyCapes": [
+      "wavyCapes.preset",
+      "wavyCapes.style",
+      "wavyCapes.quality",
+      "wavyCapes.players",
+      "wavyCapes.gravity",
+      "wavyCapes.stiffness",
+      "wavyCapes.damping",
+      "wavyCapes.drag",
+      "wavyCapes.turnSwing",
+      "wavyCapes.wind",
+      "wavyCapes.flutter",
+      "wavyCapes.weatherWind",
+      "wavyCapes.waterPhysics",
+      "wavyCapes.thickness",
+      "wavyCapes.widthScale",
+      "wavyCapes.lengthScale",
+      "wavyCapes.hemFlare",
+      "wavyCapes.foldShading",
+      "wavyCapes.bodyCollision",
+      "wavyCapes.maxDistance"
+    ],
+    "explosionRing": [
+      "explosionRing.showTnt",
+      "explosionRing.showCrystals",
+      "explosionRing.showAnchors",
+      "explosionRing.showFill",
+      "explosionRing.fillOpacity",
+      "explosionRing.showFuseRing",
+      "explosionRing.showLethalRing",
+      "explosionRing.showDamageBadge",
+      "explosionRing.autoLearnRadius",
+      "explosionRing.customTntRadius",
+      "explosionRing.damageMultiplier",
+      "explosionRing.lineWidth",
+      "explosionRing.maxDistance"
+    ],
+    "tooltips": [
+      "tooltips.style",
+      "tooltips.shulkerPeek",
+      "tooltips.peekMode",
+      "tooltips.peekTrigger",
+      "tooltips.colorByShulker",
+      "tooltips.hideVanillaList",
+      "tooltips.hwTooltips",
+      "tooltips.hwAuctionPrice",
+      "tooltips.hwRarityBorder",
+      "tooltips.hwGoldenSpawners",
+      "tooltips.hwSpawnerHighlight",
+      "tooltips.hwSpecialCompass",
+      "tooltips.hwCoinExchange",
+      "tooltips.hwKnockbackHighlight",
+      "tooltips.showDurability",
+      "tooltips.showItemHeader"
+    ],
+    "swing": [
+      "swing.style",
+      "swing.speed",
+      "swing.amplitude",
+      "swing.rotateX",
+      "swing.rotateY",
+      "swing.rotateZ",
+      "swing.equip"
+    ],
+    "itemPhysics": [
+      "itemPhysics.rotationSpeed",
+      "itemPhysics.grounded"
+    ],
+    "freelook": [
+      "freelook.smoothReturn",
+      "freelook.returnSpeed",
+      "freelook.sensitivity"
+    ],
+    "lowFire": [
+      "lowFire.hidden"
+    ],
+    "hud": [
+      "hud.maxVisible",
+      "hud.icons",
+      "hud.names",
+      "hud.time",
+      "hud.progress",
+      "hud.background",
+      "hud.hideWhenEmpty",
+      "hud.horizontal",
+      "hud.sort"
+    ],
+    "tnt": [
+      "tnt.range",
+      "tnt.showDistance"
+    ],
+    "inventory": [
+      "inventory.hotbar",
+      "inventory.rows",
+      "inventory.counts",
+      "inventory.durability"
+    ],
+    "armor": [
+      "armor.style",
+      "armor.horizontal",
+      "armor.durability",
+      "armor.durabilityStyle",
+      "armor.durabilityPosition",
+      "armor.percent",
+      "armor.names"
+    ],
+    "potions": [
+      "potions.format",
+      "potions.horizontal",
+      "potions.time",
+      "potions.level",
+      "potions.icons",
+      "potions.hideWhenEmpty"
+    ],
+    "food": [],
+    "target": [
+      "target.style",
+      "target.displaySeconds",
+      "target.absorption",
+      "target.distance"
+    ],
+    "scoreboard": [
+      "scoreboard.font",
+      "scoreboard.hideScores",
+      "scoreboard.cleanAds",
+      "scoreboard.background"
+    ],
+    "keystrokes": [
+      "keystrokes.mouseButtons",
+      "keystrokes.space",
+      "keystrokes.cps"
+    ],
+    "coordinates": [],
+    "ping": [
+      "ping.colored"
+    ],
+    "fps": [
+      "fps.colored",
+      "fps.background"
+    ],
+    "menu": [
+      "menu.animationSpeed"
+    ],
+    "theme": [
+      "theme.accent",
+      "theme.secondaryAccent",
+      "theme.backgroundOpacity",
+      "theme.radius",
+      "theme.borderWidth",
+      "theme.background",
+      "theme.surface",
+      "theme.raised",
+      "theme.text",
+      "theme.muted",
+      "theme.border",
+      "theme.blurRadius",
+      "theme.blurQuality",
+      "theme.fontTracking",
+      "theme.fontWeight",
+      "theme.effects.backgroundBlur",
+      "theme.effects.grain",
+      "theme.effects.grainAmount",
+      "theme.effects.grainScale",
+      "theme.motion.duration",
+      "theme.motion.enterDuration",
+      "theme.motion.exitDuration",
+      "theme.motion.easing",
+      "theme.motion.hoverScale",
+      "theme.motion.pressScale",
+      "theme.motion.enterOpacity",
+      "theme.motion.enterOffsetX",
+      "theme.motion.enterOffsetY",
+      "theme.motion.layout",
+      "theme.motion.value",
+      "theme.motion.stagger",
+      "theme.motion.numericMotion"
+    ],
+    "tweaksy": [
+      "tweaksy.mainLeftFix.enabled",
+      "tweaksy.commandFix.enabled",
+      "tweaksy.cursorFix.enabled",
+      "tweaksy.fullBright.enabled",
+      "tweaksy.fullBright.strength"
+    ],
+    "minimap": [
+      "minimap.shape",
+      "minimap.size",
+      "minimap.zoom",
+      "minimap.frameOpacity",
+      "minimap.lockNorth",
+      "minimap.arrowStyle",
+      "minimap.arrowScale",
+      "minimap.arrowColor",
+      "minimap.enlargeMode",
+      "minimap.enlargeSize",
+      "minimap.enlargeZoom",
+      "minimap.terrainShading",
+      "minimap.reliefStyle",
+      "minimap.reliefStrength",
+      "minimap.biomeColors",
+      "minimap.blockLight",
+      "minimap.chunkGrid",
+      "minimap.showCompass",
+      "minimap.showCoords",
+      "minimap.showWaypoints",
+      "minimap.offscreenWaypoints",
+      "minimap.showPlayers",
+      "minimap.showPlayerHeads",
+      "minimap.showPlayerNames",
+      "minimap.showInvisiblePlayers",
+      "minimap.playerScale",
+      "minimap.showItems",
+      "minimap.itemStyle",
+      "minimap.itemBackground",
+      "minimap.onlyValuableItems",
+      "minimap.itemScale",
+      "minimap.mobIconStyle",
+      "minimap.mobScale",
+      "minimap.showHostileMobs",
+      "minimap.showNeutralMobs",
+      "minimap.showPassiveMobs",
+      "minimap.showOtherEntities",
+      "minimap.showMobNames",
+      "minimap.showExplosives"
+    ],
+    "worldMap": [
+      "worldMap.diskCache",
+      "worldMap.terrainShading",
+      "worldMap.biomeColors",
+      "worldMap.blockLight",
+      "worldMap.showGrid",
+      "worldMap.showCoordinatesBar",
+      "worldMap.showWaypoints",
+      "worldMap.showPlayers",
+      "worldMap.showInvisiblePlayers",
+      "worldMap.showItems",
+      "worldMap.showMobs",
+      "worldMap.showOtherEntities",
+      "worldMap.teleportCommand"
+    ],
+    "accountSwitcher": [
+      "accountSwitcher.layout",
+      "accountSwitcher.titleScreen",
+      "accountSwitcher.titlePosition",
+      "accountSwitcher.multiplayerScreen",
+      "accountSwitcher.multiplayerPosition",
+      "accountSwitcher.closeOnSwitch",
+      "accountSwitcher.hideAltsInProtect"
+    ],
+    "hwhelper": [
+      "hwhelper.esp.enabled",
+      "hwhelper.esp.stun",
+      "hwhelper.esp.explosiveTrap",
+      "hwhelper.esp.trap",
+      "hwhelper.esp.jakeLuminaire",
+      "hwhelper.esp.drillHelper",
+      "hwhelper.compassWaypoint",
+      "hwhelper.aucprice.enabled",
+      "hwhelper.answap.enabled",
+      "hwhelper.betterSell.enabled",
+      "hwhelper.events.enabled",
+      "hwhelper.events.showHud",
+      "hwhelper.timers.enabled",
+      "hwhelper.timers.actionbarTimer",
+      "hwhelper.timers.scale"
+    ],
+    "effectAlert": [
+      "effectAlert.mode",
+      "effectAlert.warnSeconds",
+      "effectAlert.notifyOnExpire",
+      "effectAlert.soundPreset",
+      "effectAlert.scale"
+    ],
+    "soundControl": [
+      "soundControl.muteBlocks",
+      "soundControl.blockVolume",
+      "soundControl.customTnt",
+      "soundControl.chatMention"
+    ],
+    "tapeMouse": [
+      "tapeMouse.action",
+      "tapeMouse.delayTicks",
+      "tapeMouse.workInBackground",
+      "tapeMouse.showHudIndicator"
+    ]
+  },
+  "styleGroups": {
+    "simple": [
+      "theme.mode",
+      "theme.customBackground",
+      "theme.customSurface",
+      "theme.customRaised",
+      "theme.customText",
+      "theme.customAccent",
+      "theme.backgroundOpacity",
+      "theme.effects.backgroundBlur",
+      "theme.blurRadius",
+      "theme.blurQuality",
+      "theme.blurMix"
+    ],
+    "detailed": [
+      "theme.mode",
+      "theme.customBackground",
+      "theme.customSurface",
+      "theme.customRaised",
+      "theme.customText",
+      "theme.customAccent",
+      "theme.backgroundOpacity",
+      "theme.effects.backgroundBlur",
+      "theme.blurRadius",
+      "theme.blurQuality",
+      "theme.blurMix"
+    ]
+  }
+}

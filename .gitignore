@@ -1,0 +1,27 @@
+# Local dev / private archive (tools, unused assets, drafts, bots)
+/private/
+
+# Gradle & build outputs
+.gradle/
+.tools/
+.kotlin/
+**/build/
+modules/platform/generated/
+dist/
+launcher/target/
+native/nightclient-native/target/
+modules/platform/src/main/resources/assets/nightclient/natives/
+
+# Logs & compiled binaries
+*.log
+*.class
+__pycache__/
+*.py[cod]
+
+# IDE & OS metadata
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+.env

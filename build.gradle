@@ -1,0 +1,340 @@
+import groovy.json.JsonOutput
+
+plugins {
+    id 'base'
+    id 'net.fabricmc.fabric-loom-remap' version '1.18.4' apply false
+    id 'net.fabricmc.fabric-loom' version '1.18.4' apply false
+}
+
+def commonNames = ['api', 'core', 'renderer', 'ui', 'runtime']
+def modVersion = providers.gradleProperty('modVersion').getOrElse('0.2.0')
+def buildProfile = providers.gradleProperty('buildProfile').getOrElse('full').toLowerCase(java.util.Locale.ROOT)
+def includeOfficialCapes = providers.gradleProperty('officialCapes')
+    .map { it.toBoolean() }
+    .getOrElse(!(buildProfile in ['store', 'modrinth', 'curseforge', 'clean']))
+
+allprojects {
+    group = 'dev.nightclient'
+    version = modVersion
+    repositories { mavenCentral() }
+}
+
+commonNames.each { name ->
+    project(":${name}") {
+        apply plugin: 'java-library'
+        tasks.withType(JavaCompile).configureEach {
+            options.release = 17
+            options.encoding = 'UTF-8'
+            options.compilerArgs += ['-Xlint:-options']
+        }
+
+        tasks.named('processResources') {
+            doFirst { delete destinationDir }
+        }
+        dependencies {
+            testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+            testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.3'
+            testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.3'
+        }
+        tasks.named('test') {
+            useJUnitPlatform()
+            maxHeapSize = '1g'
+        }
+    }
+}
+
+project(':core') {
+    sourceSets.main.java.srcDir(includeOfficialCapes ? 'src/officialCapes/java' : 'src/noOfficialCapes/java')
+    tasks.named('compileJava') {
+        inputs.property('includeOfficialCapes', includeOfficialCapes)
+    }
+    dependencies {
+        api project(':api')
+        api 'com.google.code.gson:gson:2.8.0'
+    }
+}
+project(':renderer') {
+    dependencies { api project(':api'); api project(':core') }
+    def generatedShaders = layout.buildDirectory.dir('generated/resources')
+    sourceSets.main.resources.srcDir generatedShaders
+    def generateShaders = tasks.register('generateShaderAssets', Exec) {
+        workingDir rootProject.projectDir
+        inputs.file rootProject.file('tools/build.py')
+        inputs.file rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/saturation.glsl')
+        inputs.file rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/rounded_surface.glsl')
+        inputs.file rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/cosmetic_model_vsh.glsl')
+        inputs.file rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/cosmetic_model_fsh.glsl')
+        inputs.dir rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/atmosphere')
+        ['scalar','ubo','vulkan','pearl'].each { dialect ->
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/fullscreen_${dialect}.vsh") }
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/saturation_${dialect}.fsh") }
+        }
+        ['legacy','ubo','vulkan','pearl'].each { dialect ->
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/cosmetic_model_${dialect}.vsh") }
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/cosmetic_model_${dialect}.fsh") }
+        }
+        ['ubo','vulkan','pearl'].each { dialect ->
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/rounded_surface_${dialect}.fsh") }
+            ['dawn','custom_sky','motion_blur','bokeh_extract','bokeh_disc','bokeh_streak','bokeh_composite',
+             'mood_dust','mood_snow','mood_sakura','mood_autumn','mood_fireflies','mood_mystic'].each { pass ->
+                outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/atmosphere_${pass}_${dialect}.fsh") }
+            }
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/atmosphere_precip_${dialect}.vsh") }
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/atmosphere_precip_${dialect}.fsh") }
+        }
+        commandLine 'python3', rootProject.file('tools/build.py').absolutePath, 'generate-shader-assets',
+            '--output', generatedShaders.get().asFile.absolutePath
+    }
+    def generateIcons = tasks.register('generateIconAssets', Exec) {
+        workingDir rootProject.projectDir
+        inputs.file rootProject.file('tools/build.py')
+        inputs.dir rootProject.file('modules/renderer/src/main/resources/assets/nightclient/icons')
+        inputs.dir rootProject.file('modules/ui/src/main/resources/assets/nightclient/icons')
+        outputs.file generatedShaders.map { it.file('assets/nightclient/icons/compiled.bin') }
+        outputs.file generatedShaders.map { it.file('assets/nightclient/textures/ui/grain.png') }
+        outputs.file generatedShaders.map { it.file('assets/nightclient/textures/ui/grain.png.mcmeta') }
+        commandLine 'python3',rootProject.file('tools/build.py').absolutePath, 'generate-icon-assets',
+            '--output',generatedShaders.get().asFile.absolutePath
+    }
+    def generateBackdrop = tasks.register('generateBackdropAssets', Exec) {
+        dependsOn generateShaders
+        workingDir rootProject.projectDir
+        inputs.file rootProject.file('tools/build.py')
+        outputs.file generatedShaders.map { it.file('assets/nightclient/shaders/include/backdrop.glsl') }
+        ['ubo','vulkan','pearl'].each { dialect ->
+            outputs.file generatedShaders.map { it.file("assets/nightclient/shaders/core/backdrop_${dialect}.fsh") }
+        }
+        commandLine 'python3',rootProject.file('tools/build.py').absolutePath, 'generate-backdrop-assets',
+            '--output',generatedShaders.get().asFile.absolutePath
+    }
+    tasks.named('processResources') { dependsOn generateShaders, generateIcons, generateBackdrop }
+}
+project(':ui') {
+    dependencies {
+        api project(':api')
+        api project(':core')
+        api project(':renderer')
+    }
+}
+project(':runtime') {
+    dependencies {
+        api project(':api')
+        api project(':core')
+        api project(':renderer')
+        api project(':ui')
+    }
+}
+
+
+
+project(':universal') {
+    apply plugin: 'java-library'
+    repositories { maven { url = 'https://maven.fabricmc.net/' } }
+    sourceSets.main.java {
+        srcDir rootProject.file('modules/platform/src/main/java')
+        include 'dev/nightclient/bootstrap/**', 'dev/nightclient/universal/**'
+        include 'dev/nightclient/platform/GeometryCanvas.java'
+        include 'dev/nightclient/platform/BlurPlan.java'
+        include 'dev/nightclient/platform/ItemOpacity.java'
+        include 'dev/nightclient/platform/opt/**'
+    }
+    dependencies {
+        compileOnly project(':renderer')
+        compileOnly 'net.fabricmc:fabric-loader:0.19.5'
+        compileOnly 'net.fabricmc:sponge-mixin:0.17.4+mixin.0.8.7'
+        compileOnly 'org.ow2.asm:asm-tree:9.10.1'
+        compileOnly 'com.google.code.gson:gson:2.8.0'
+        testImplementation 'net.fabricmc:fabric-loader:0.19.5'
+        testImplementation 'net.fabricmc:sponge-mixin:0.17.4+mixin.0.8.7'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+        testImplementation 'org.ow2.asm:asm:9.10.1'
+        testImplementation project(':renderer')
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.3'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.3'
+    }
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 17
+        options.encoding = 'UTF-8'
+    }
+    tasks.named('test') { useJUnitPlatform() }
+}
+
+gradle.ext.minecraftTargets.each { target ->
+    def minecraftVersion = target.minecraft
+    def name = 'mc' + minecraftVersion.replace('.', '_')
+    project(":${name}") {
+        apply plugin: target.obfuscated ? 'net.fabricmc.fabric-loom-remap' : 'net.fabricmc.fabric-loom'
+        version = "${modVersion}+mc${minecraftVersion}"
+        base { archivesName = includeOfficialCapes ? 'NightClient' : 'NightClient-store' }
+        dependencies {
+            minecraft "com.mojang:minecraft:${minecraftVersion}"
+            if (target.obfuscated) {
+                mappings loom.officialMojangMappings()
+                modImplementation "net.fabricmc:fabric-loader:${target.loader}"
+            } else {
+                implementation "net.fabricmc:fabric-loader:${target.loader}"
+            }
+            implementation project(':runtime')
+        }
+        sourceSets.main {
+            java.srcDir rootProject.file('modules/platform/src/main/java')
+            resources.srcDir rootProject.file('modules/platform/src/main/resources')
+            resources.srcDir layout.buildDirectory.dir('generated/resources')
+        }
+        def benchJvmArgs = providers.gradleProperty('benchJvmArgs').getOrElse('')
+        if (!benchJvmArgs.isEmpty()) {
+            loom.runs.named('client') {
+                benchJvmArgs.split(/\s+/).findAll { !it.isEmpty() }.each { vmArg(it) }
+            }
+        }
+        tasks.withType(JavaCompile).configureEach {
+            options.release = target.java as int
+            options.encoding = 'UTF-8'
+            options.compilerArgs += ['-Xlint:-options']
+        }
+
+        def generatePlatform = tasks.register('generatePlatformSources', Exec) {
+            dependsOn project(':renderer').tasks.named('generateShaderAssets'), project(':renderer').tasks.named('generateIconAssets'), project(':renderer').tasks.named('generateBackdropAssets')
+            workingDir rootProject.projectDir
+            inputs.file rootProject.file('tools/build.py')
+            inputs.files rootProject.fileTree('tools') { include '**/*.py' }
+            inputs.file rootProject.file('modules/platform/compatibility/features.json')
+            inputs.file rootProject.file('modules/platform/compatibility/world-features.json')
+            inputs.file rootProject.file('modules/platform/compatibility/camera-features.json')
+            inputs.dir rootProject.file('modules/platform/src/templates')
+            inputs.file rootProject.file('modules/renderer/src/main/resources/assets/nightclient/shaders/include/saturation.glsl')
+            inputs.file rootProject.file('modules/platform/compatibility/bridges.json')
+            commonNames.each { common ->
+                inputs.files rootProject.fileTree("modules/${common}/src/main/resources")
+            }
+            inputs.files rootProject.fileTree('modules/platform/src/main/resources')
+            inputs.dir project(':renderer').layout.buildDirectory.dir('generated/resources')
+            inputs.file rootProject.file('modules/platform/compatibility/versions.json')
+            inputs.property 'minecraftVersion', minecraftVersion
+            outputs.dir file('src/main/java')
+            commandLine 'python3', rootProject.file('tools/build.py').absolutePath, 'generate-platform',
+                '--version', minecraftVersion, '--output', file('src/main/java').absolutePath
+            doLast {
+                def generated = providers.exec {
+                    workingDir rootProject.projectDir
+                    commandLine 'python3', rootProject.file('tools/build.py').absolutePath, 'generate-renderers',
+                        '--version', minecraftVersion, '--output', file('src/main/java').absolutePath
+                }
+                def result = generated.result.get()
+                def stderr = generated.standardError.asText.get()
+                if (!stderr.isEmpty()) logger.lifecycle(stderr)
+                result.assertNormalExitValue()
+                def resources = providers.exec {
+                    workingDir rootProject.projectDir
+                    commandLine 'python3', rootProject.file('tools/build.py').absolutePath, 'generate-resources',
+                        '--version', minecraftVersion, '--output', file('src/main/java').absolutePath
+                }
+                def resourceResult = resources.result.get()
+                def resourceErrors = resources.standardError.asText.get()
+                if (!resourceErrors.isEmpty()) logger.lifecycle(resourceErrors)
+                resourceResult.assertNormalExitValue()
+            }
+        }
+        tasks.named('compileJava') { dependsOn generatePlatform }
+
+        def generateMetadata = tasks.register('generateModMetadata') {
+            dependsOn generatePlatform
+            inputs.property 'minecraftVersion', minecraftVersion
+            inputs.property 'modVersion', modVersion
+            inputs.files sourceSets.main.java
+            outputs.dir layout.buildDirectory.dir('generated/resources')
+            doLast {
+                def resourceDir = layout.buildDirectory.dir('generated/resources').get().asFile
+                resourceDir.mkdirs()
+                def mixins = []
+                sourceSets.main.java.files.findAll { it.name.endsWith('.java') }.sort().each { source ->
+                    def text = source.getText('UTF-8')
+                    if (text =~ /@Mixin\s*[({]/) {
+                        def packageMatch = text =~ /(?m)^package\s+([\w.]+)\s*;/
+                        if (!packageMatch.find()) throw new GradleException("Missing package in ${source}")
+                        def qualified = packageMatch.group(1) + '.' + source.name.substring(0, source.name.length() - 5)
+                        if (!qualified.startsWith('dev.nightclient.platform.mixin.')) {
+                            throw new GradleException("Mixin outside the dedicated mixin package: ${qualified}")
+                        }
+                        mixins.add(qualified.substring('dev.nightclient.platform.mixin.'.length()))
+                    }
+                }
+                if (mixins.isEmpty()) throw new GradleException('Platform generated no mixins; refusing to package an inert mod.')
+                def metadata = [schemaVersion: 1, id: 'nightclient', version: version.toString(),
+                    name: 'NightClient',
+                    description: 'Glassmorphic client-side visuals, customizable HUD, atmosphere, world map & PvP utilities for Fabric.',
+                    authors: ['NemoCC'],
+                    contact: [
+                        homepage: 'https://github.com/N3moCC/NightClient',
+                        sources: 'https://github.com/N3moCC/NightClient',
+                        issues: 'https://github.com/N3moCC/NightClient/issues',
+                        discord: 'https://discord.gg/GenCYdp7NX'
+                    ],
+                    license: 'MIT',
+                    icon: 'assets/nightclient/icon.png', environment: 'client',
+                    entrypoints: [client: ['dev.nightclient.platform.NightClientMod']],
+                    mixins: ['nightclient.mixins.json'],
+                    depends: [fabricloader: ">=${target.loader}", minecraft: minecraftVersion, java: ">=${target.java}"]]
+                new File(resourceDir, 'fabric.mod.json').text = JsonOutput.prettyPrint(JsonOutput.toJson(metadata)) + '\n'
+                def config = [required: true, minVersion: '0.8', package: 'dev.nightclient.platform.mixin',
+                    compatibilityLevel: "JAVA_${target.java}", client: mixins.unique().sort(),
+                    injectors: [defaultRequire: 1]]
+                new File(resourceDir, 'nightclient.mixins.json').text = JsonOutput.prettyPrint(JsonOutput.toJson(config)) + '\n'
+                new File(resourceDir, 'nightclient.compatibility.json').text = JsonOutput.prettyPrint(JsonOutput.toJson(target)) + '\n'
+            }
+        }
+        def includeNative = !providers.gradleProperty('includeNative').getOrElse('true').equalsIgnoreCase('false')
+        tasks.named('processResources') {
+            dependsOn generateMetadata
+            if (!includeNative) {
+                exclude 'assets/nightclient/natives/**'
+            }
+        }
+        tasks.named('jar') {
+            duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+            from(rootProject.file('LICENSE'))
+            commonNames.each { common -> from project(":${common}").sourceSets.main.output }
+            manifest { attributes 'Implementation-Title': 'NightClient', 'Implementation-Version': version, 'Implementation-Vendor': 'NemoCC', 'Minecraft-Version': minecraftVersion }
+        }
+        def distribute = tasks.register('distribute', Copy) {
+            def artifact = tasks.named(target.obfuscated ? 'remapJar' : 'jar')
+            dependsOn artifact
+            from artifact.flatMap { it.archiveFile }
+            into rootProject.layout.buildDirectory.dir(providers.gradleProperty('adapterOutputDir').getOrElse('adapters'))
+        }
+        tasks.named('build') { dependsOn distribute }
+        tasks.register('writeAuditClasspath') {
+            dependsOn distribute
+            inputs.files sourceSets.main.compileClasspath
+            inputs.property 'minecraftVersion', minecraftVersion
+            inputs.property 'modVersion', modVersion
+            inputs.property 'javaRelease', target.java
+            def report = rootProject.layout.buildDirectory.file("compatibility/${minecraftVersion}/classpath.json")
+            outputs.file report
+            doLast {
+                def output = report.get().asFile
+                output.parentFile.mkdirs()
+                def finalJar = tasks.named(target.obfuscated ? 'remapJar' : 'jar').get().archiveFile.get().asFile
+                def data = [minecraft: minecraftVersion, java: target.java,
+                    devJar: tasks.named('jar').get().archiveFile.get().asFile.absolutePath,
+                    artifact: finalJar.absolutePath,
+                    classpath: sourceSets.main.compileClasspath.files.collect { it.absolutePath }]
+                output.text = JsonOutput.prettyPrint(JsonOutput.toJson(data)) + '\n'
+            }
+        }
+    }
+}
+
+tasks.named('build') {
+    dependsOn commonNames.collect { ":${it}:build" }
+    dependsOn gradle.ext.minecraftTargets.collect { ':mc' + it.minecraft.replace('.', '_') + ':build' }
+}
+
+tasks.register('universalJar', Exec) {
+    dependsOn commonNames.collect { ":${it}:jar" }
+    dependsOn ':universal:build'
+    workingDir rootProject.projectDir
+    def args = ['python3', 'tools/build.py', 'assemble-universal']
+    if (!includeOfficialCapes) args.add('--no-official-capes')
+    commandLine args
+}

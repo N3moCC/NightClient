@@ -1,0 +1,170 @@
+{
+  "1.20": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.1": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.2": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.3": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.4": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.5": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.20.6": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.1": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.2": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.3": {
+    "fireHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translationHook": "renderFire(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.4": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.5": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.6": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.7": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.8": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.9": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.10": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "1.21.11": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "26.1": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "26.1.1": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "26.1.2": {
+    "fireHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "renderFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translateOwner": "com/mojang/blaze3d/vertex/PoseStack",
+    "fireTranslate": "(FFF)V",
+    "fireTranslateCallSites": 1
+  },
+  "26.2": {
+    "fireHook": "submitFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "lambda$submitFire$0(Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lcom/mojang/blaze3d/vertex/VertexConsumer;)V",
+    "translateOwner": "org/joml/Matrix4f",
+    "fireTranslate": "(FFF)Lorg/joml/Matrix4f;",
+    "fireTranslateCallSites": 2
+  },
+  "26.3": {
+    "fireHook": "submitFire(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)V",
+    "translationHook": "lambda$submitFire$0(Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lcom/mojang/blaze3d/vertex/VertexConsumer;)V",
+    "translateOwner": "org/joml/Matrix4f",
+    "fireTranslate": "(FFF)Lorg/joml/Matrix4f;",
+    "fireTranslateCallSites": 2
+  }
+}

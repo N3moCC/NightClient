@@ -1,0 +1,16 @@
+{
+  "family": "Onest",
+  "source": "https://github.com/google/fonts/tree/4c1db3aec83c67dd223dd82a68c039cab30917a9/ofl/onest",
+  "commit": "4c1db3aec83c67dd223dd82a68c039cab30917a9",
+  "fontSha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+  "license": "SIL Open Font License 1.1",
+  "atlasWeights": [
+    400,
+    600
+  ],
+  "rawFontShippedInMod": false,
+  "atlasRasterSizes": [
+    24,
+    48
+  ]
+}

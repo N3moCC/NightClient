@@ -1,0 +1,10 @@
+{
+  "default": "default",
+  "themes": [
+    {
+      "id": "default",
+      "label": "NightClient",
+      "directory": ""
+    }
+  ]
+}

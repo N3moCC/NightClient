@@ -1,0 +1,14 @@
+{
+  "key.nightclient.menu": "Open NightClient",
+  "key.categories.nightclient": "NightClient",
+  "key.category.nightclient.visuals": "NightClient",
+  "key.nightclient.zoom": "Zoom",
+  "key.nightclient.freelook": "Freelook",
+  "key.nightclient.waypoint": "Quick Waypoint",
+  "key.nightclient.worldMap": "World Map",
+  "key.nightclient.mapSettings": "Map Settings",
+  "key.nightclient.mapEnlarge": "Enlarge Minimap",
+  "key.nightclient.waypointsMenu": "Waypoints List",
+  "key.category.nightclient.features": "NightClient",
+  "key.category.nightclient.camera": "NightClient"
+}

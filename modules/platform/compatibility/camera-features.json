@@ -1,0 +1,1287 @@
+{
+  "1.20": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.Camera",
+        "float"
+      ],
+      "selector": "renderItemInHand(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [],
+      "selector": "turnPlayer()V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.1": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.Camera",
+        "float"
+      ],
+      "selector": "renderItemInHand(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [],
+      "selector": "turnPlayer()V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.2": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.Camera",
+        "float"
+      ],
+      "selector": "renderItemInHand(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [],
+      "selector": "turnPlayer()V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.3": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.Camera",
+        "float"
+      ],
+      "selector": "renderItemInHand(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [],
+      "selector": "turnPlayer()V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.4": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.Camera",
+        "float"
+      ],
+      "selector": "renderItemInHand(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;F)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [],
+      "selector": "turnPlayer()V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.5": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.20.6": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.1": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.2": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.3": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.4": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.5": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.Camera",
+        "float",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/Camera;FLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;)V",
+      "static": true
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.6": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZF)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.7": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZF)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.8": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.MultiBufferSource",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZF)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.9": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZFLnet/minecraft/client/renderer/SubmitNodeCollector;)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.10": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.BlockGetter",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZFLnet/minecraft/client/renderer/SubmitNodeCollector;)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "1.21.11": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "float",
+        "boolean",
+        "org.joml.Matrix4f"
+      ],
+      "selector": "renderItemInHand(FZLorg/joml/Matrix4f;)V"
+    },
+    "camera": {
+      "args": [
+        "net.minecraft.world.level.Level",
+        "net.minecraft.world.entity.Entity",
+        "boolean",
+        "boolean",
+        "float"
+      ],
+      "selector": "setup(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZFLnet/minecraft/client/renderer/SubmitNodeCollector;)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "26.1": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.CameraRenderState",
+        "float",
+        "org.joml.Matrix4fc"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/renderer/state/level/CameraRenderState;FLorg/joml/Matrix4fc;)V"
+    },
+    "camera": {
+      "args": [
+        "float"
+      ],
+      "selector": "alignWithEntity(F)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZZFLnet/minecraft/client/renderer/SubmitNodeCollector;Z)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "26.1.1": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.CameraRenderState",
+        "float",
+        "org.joml.Matrix4fc"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/renderer/state/level/CameraRenderState;FLorg/joml/Matrix4fc;)V"
+    },
+    "camera": {
+      "args": [
+        "float"
+      ],
+      "selector": "alignWithEntity(F)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZZFLnet/minecraft/client/renderer/SubmitNodeCollector;Z)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "26.1.2": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "renderArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.CameraRenderState",
+        "float",
+        "org.joml.Matrix4fc"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/renderer/state/level/CameraRenderState;FLorg/joml/Matrix4fc;)V"
+    },
+    "camera": {
+      "args": [
+        "float"
+      ],
+      "selector": "alignWithEntity(F)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": {
+      "selector": "renderScreenEffect(ZZFLnet/minecraft/client/renderer/SubmitNodeCollector;Z)V",
+      "static": false
+    },
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "26.2": {
+    "handOwner": "net.minecraft.client.renderer.ItemInHandRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.player.AbstractClientPlayer",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "submitArmWithItem(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.CameraRenderState",
+        "float",
+        "org.joml.Matrix4fc"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/renderer/state/level/CameraRenderState;FLorg/joml/Matrix4fc;)V"
+    },
+    "camera": {
+      "args": [
+        "float"
+      ],
+      "selector": "alignWithEntity(F)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": null,
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  },
+  "26.3": {
+    "handOwner": "net.minecraft.client.renderer.FirstPersonHandsAndItemsRenderer",
+    "hand": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.PlayerRenderState",
+        "net.minecraft.client.renderer.state.level.FirstPersonHandsAndItemsRenderState",
+        "float",
+        "float",
+        "net.minecraft.world.InteractionHand",
+        "float",
+        "net.minecraft.world.item.ItemStack",
+        "float",
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.client.renderer.SubmitNodeCollector",
+        "int"
+      ],
+      "selector": "submitArmWithItem(Lnet/minecraft/client/renderer/state/level/PlayerRenderState;Lnet/minecraft/client/renderer/state/level/FirstPersonHandsAndItemsRenderState;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V"
+    },
+    "capture": {
+      "args": [
+        "net.minecraft.client.renderer.state.level.CameraRenderState",
+        "net.minecraft.client.renderer.state.level.PlayerRenderState",
+        "com.mojang.renderpearl.api.textures.GpuTextureView"
+      ],
+      "selector": "renderItemInHand(Lnet/minecraft/client/renderer/state/level/CameraRenderState;Lnet/minecraft/client/renderer/state/level/PlayerRenderState;Lcom/mojang/renderpearl/api/textures/GpuTextureView;)V"
+    },
+    "camera": {
+      "args": [
+        "float"
+      ],
+      "selector": "alignWithEntity(F)V"
+    },
+    "mouse": {
+      "args": [
+        "double"
+      ],
+      "selector": "turnPlayer(D)V"
+    },
+    "attack": {
+      "args": [
+        "com.mojang.blaze3d.vertex.PoseStack",
+        "net.minecraft.world.entity.HumanoidArm",
+        "float"
+      ],
+      "selector": "applyItemArmAttackTransform(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/HumanoidArm;F)V"
+    },
+    "screenEffect": null,
+    "evidence": "Mapped release bytecode, javap descriptors and invocation targets; all 24 adapters are compiled separately."
+  }
+}

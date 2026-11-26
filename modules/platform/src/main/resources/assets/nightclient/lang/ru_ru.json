@@ -1,0 +1,14 @@
+{
+  "key.nightclient.menu": "Открыть NightClient",
+  "key.categories.nightclient": "NightClient",
+  "key.category.nightclient.visuals": "NightClient",
+  "key.nightclient.zoom": "Приближение",
+  "key.nightclient.freelook": "Свободный обзор",
+  "key.nightclient.waypoint": "Быстрая метка",
+  "key.nightclient.worldMap": "Карта мира",
+  "key.nightclient.mapSettings": "Настройки карты",
+  "key.nightclient.mapEnlarge": "Расширить миникарту",
+  "key.nightclient.waypointsMenu": "Список вейпоинтов",
+  "key.category.nightclient.features": "NightClient",
+  "key.category.nightclient.camera": "NightClient"
+}

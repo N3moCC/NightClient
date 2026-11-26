@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=NightClient Launcher
+Comment=Minecraft instance launcher with integrated NightClient visuals
+Exec=nightclient-launcher %u
+Icon=dev.nightclient.launcher
+Categories=Game;
+Terminal=false
+StartupNotify=true
+StartupWMClass=dev.nightclient.launcher
+MimeType=x-scheme-handler/nightclient;

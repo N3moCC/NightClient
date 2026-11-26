@@ -1,0 +1,33 @@
+import groovy.json.JsonSlurper
+
+pluginManagement {
+    repositories {
+        maven { url = 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'NightClient'
+include 'api', 'core', 'renderer', 'ui', 'runtime'
+include 'universal'
+
+['api', 'core', 'renderer', 'ui', 'runtime', 'universal'].each { name ->
+    project(":${name}").projectDir = file("modules/${name}")
+}
+
+def matrix = new JsonSlurper().parse(file('modules/platform/compatibility/versions.json'))
+def requested = providers.gradleProperty('mcVersion').getOrElse('26.3')
+def commonOnly = providers.gradleProperty('commonOnly').getOrElse('false').toBoolean()
+def allMinecraft = providers.gradleProperty('allMinecraft').getOrElse('false').toBoolean()
+def selected = commonOnly ? [] : (allMinecraft ? matrix : matrix.findAll { it.minecraft == requested })
+if (!commonOnly && selected.isEmpty()) {
+    throw new GradleException("Unsupported Minecraft version '${requested}'. See modules/platform/compatibility/versions.json.")
+}
+gradle.ext.minecraftTargets = selected
+selected.each { target ->
+    def projectName = 'mc' + target.minecraft.replace('.', '_')
+    def directory = file("modules/platform/generated/${target.minecraft}")
+    directory.mkdirs()
+    include projectName
+    project(":${projectName}").projectDir = directory
+}

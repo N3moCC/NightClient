@@ -1,0 +1,22 @@
+[package]
+name = "nightclient-native"
+version = "1.4.0"
+edition = "2021"
+description = "NightClient Rust JNI acceleration engine: GPU entity/text instancing, PBO async texture uploads, and SIMD Netty packet codec."
+license = "MIT"
+
+[lib]
+name = "nightclient_native"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+flate2 = { version = "1.1", default-features = false, features = ["zlib-rs"] }
+parking_lot = "0.12"
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
